@@ -1,28 +1,26 @@
 {
-  "name": "resume-generator",
+  "name": "barn",
   "version": "0.0.1",
-  "description": "A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on Github Page.",
+  "description": "A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on Github Pages.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maples7/resume-generator.git"
+    "url": "git+https://github.com/Maples7/barn.git"
   },
   "keywords": [
     "resume",
     "CV",
-    "generator",
-    "static",
-    "website",
-    "Github",
-    "Page"
+    "static website generator",
+    "Github Pages",
+    "Hexo"
   ],
   "author": "Maples7 <maples7.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Maples7/resume-generator/issues"
+    "url": "https://github.com/Maples7/barn/issues"
   },
-  "homepage": "https://github.com/Maples7/resume-generator#readme"
+  "homepage": "https://github.com/Maples7/barn#readme"
 }
