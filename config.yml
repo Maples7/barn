@@ -1,3 +1,28 @@
 # Barn Configuration
 ## See https://github.com/Maples7/barn for more infomation
+
+######################################
+############### Theme ################
+######################################
+
+## name of theme
 theme: default
+
+## one of these values: pug
+### ...post issues or RPs to add more support of engines
+template_engine: pug
+
+######################################
+############### Deploy ###############
+######################################
+
+## html compression
+html_minifier:
+  enable: true
+  exclude:
+
+## css compression
+css_minifier:
+  enable: true
+  exclue:
+    - '*.min.css'
