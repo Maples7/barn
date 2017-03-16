@@ -27,6 +27,11 @@ htmls:
 ############### Deploy ###############
 ######################################
 
+## deploy repo
+deploy:
+  repos:
+    github: git@github.com:Maples7/resume.git
+
 ## html compression
 html_minifier:
   enable: true
