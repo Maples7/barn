@@ -1,0 +1,44 @@
+# Barn Configuration
+## See https://github.com/Maples7/barn for more infomation
+
+######################################
+############### Theme ################
+######################################
+
+## name of theme
+theme: default
+
+## one of these values: pug
+### ...post issues or RPs to add more support of engines
+template_engine: pug
+
+######################################
+############### Theme ################
+######################################
+
+## HTML templates should be compiled and rendered
+### do **NOT** add file extension in the end of each item, just the name
+### we will detect the file extension according to `template_engine` config above
+htmls:
+  - index
+  - en
+
+######################################
+############### Deploy ###############
+######################################
+
+## deploy repo
+deploy:
+  repos:
+    github: git@github.com:Maples7/resume.git
+
+## html compression
+html_minifier:
+  enable: true
+  exclude:
+
+## css compression
+css_minifier:
+  enable: true
+  exclue:
+    - '*.min.css'
