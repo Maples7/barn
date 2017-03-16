@@ -13,6 +13,17 @@ theme: default
 template_engine: pug
 
 ######################################
+############### Theme ################
+######################################
+
+## HTML templates should be compiled and rendered
+### do **NOT** add file extension in the end of each item, just the name
+### we will detect the file extension according to `template_engine` config above
+htmls:
+  - index
+  - en
+
+######################################
 ############### Deploy ###############
 ######################################
 
