@@ -5,7 +5,7 @@ A resume/CV generator, parsing information from YAML file and output a static we
 
 ## Usage
 ### Installation
-`npm install -g barn-cli`
+`[sudo] npm install -g barn-cli` or `[sudo] yarn global add barn-cli`
 
 ### Workflow
 0. `barn -h`: check the manual
