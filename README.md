@@ -1,7 +1,7 @@
 # Barn
 [![NPM](https://nodei.co/npm/barn-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/barn-cli/)
 [![NPM](https://nodei.co/npm-dl/barn-cli.png?months=6&height=3)](https://nodei.co/npm/barn-cli/)       
-A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like [Hexo](https://hexo.io/) for generating static resume website.
+A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like resume-version [Hexo](https://hexo.io/).
 
 ## Usage
 ### Installation
@@ -12,7 +12,7 @@ A resume/CV generator, parsing information from YAML file and output a static we
 1. `barn init`: init a barn folder using `git clone`, so make sure you are connecting to the `www`
 2. `cd barn-starter`
 3. fill `config.yml` with your own customized configs
-4. fill YAML files in folder `themes/${your theme}/content` with your own infomation
+4. fill YAML files in folder `themes/${your theme}/content/` with your own infomation
 5. make use of `barn server` to debug your page and repeat step 3-5 until it satisfies you
 6. `barn deploy`: deploy to your own github resume project
 7. trun on Github Pages, see [https://pages.github.com/](https://pages.github.com/) for more instruction
@@ -39,17 +39,17 @@ Check the version.
 ### Themes  
 - default: the default theme of barn
 
-You can download any themes above and put them in folder `themes` and apply any one of them by change the config inside `Theme` block in `config.yml`.
+You can download any themes above and put them in folder `themes` and apply any one of them by changing the config inside `Theme` block in `config.yml`.
 
-(_Thers is only a default theme called `default` in folder `themes` for now, you are welcomed to customize your own and make it open source. If you'd like to, catch the key points of instruction below._)
+(_Thers is only a theme called `default` in folder `themes` for now, you are welcomed to customize your own and make it open source. If you'd like to, catch the key points of instruction below._)
 
 #### How to make my own themes
 Steps:
 1. On Github, create a barn theme project
-2. Put all html template in the root directory `./`, all css files in `./css/` and all images in `./image/`
-3. Make starter YAML files for information needed to render pages in `./content/` to tell user what they should provide in `./content`
-4. Fully test and detail document are required in your own theme proejct
-5. Post a PR to this project to list your own theme inside `Themes` above, please note whether any other template engines are needed besides `pug` and I'll give the support in my code
+2. Put all html templates in the root directory `./`, all css files in `./css/` and all images in `./image/`
+3. Make starter YAML files for information needed to render pages in `./content/` to tell user what they should provide
+4. Full tests and detail document are required in your own theme proejct
+5. Post a PR to this project to list your own theme inside `Themes` block above, please note whether any other template engines are needed besides `pug` and I'll give some support in my code
 
 You are welcomed to review this project for more information you need.
 
