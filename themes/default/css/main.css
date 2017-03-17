@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  position: relative;
+  vertical-align: baseline;
+  line-height: inherit;
+}
+
+body {
+  color: rgb(65, 64, 66);
+}
+
+.container {
+  /*position: relative;*/
+  margin-left: auto;
+  margin-right: auto; 
+  width: 740px;
+  height: 100%;
+  padding: 0 12px;
+  border: 20px rgb(65, 64, 66) solid;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+p {
+  font-size: 4px; 
+}
+
+.left-section {
+  position: relative;
+  float: left;
+  width: 240px;
+  height: 100%;
+  /*top: 0;
+  left: 0;
+  bottom: 0;*/
+  margin-left: -12px; 
+  padding: 24px;
+  background-color: rgb(226, 227, 228);
+}
+
+.right-section {
+  position: relative;
+  float: left;
+  height: 100%;
+  /*top: 0;
+  right: 0;
+  bottom: 0;*/
+  margin-right: -12px; 
+  width: 428px;
+  padding: 24px;
+  background: rgb(255, 255, 255);
+}
+
+.head-pic {
+  text-align: center;
+}
+
+.head-pic > img {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  background-color: rgb(48, 48, 48);
+}
+
+.main-title {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.main-title .title { 
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  line-height: 50px;
+}
+
+.main-title .subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.module {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.module .title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.left-section .module {
+  text-align: center;
+  /*margin-bottom: */
+}
+
+.left-section .module .title::after{
+  content: "";
+  width: 40px;
+  height: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(48, 48, 48); 
+}
+
+.left-section .module .subtitle {
+  margin-top: 12px; 
+  font-size: 10px;
+  font-weight: 800; 
+}
+
+.left-section .module .content {
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 200;  
+}
+
+.right-section .module {
+  text-align: left;
+}
+
+.right-section .module .title::after{
+  content: "";
+  width: 40px;
+  height: 2px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: rgb(48, 48, 48);
+}
+
+.right-section .module .subtitle {
+  margin-top: 10px;
+}
+
+.right-section .module .subtitle .company {
+  font-size: 14px;
+  font-weight: 900; 
+  float: left
+}
+
+.right-section .module .subtitle .company .job-position {
+  font-size: 14px;
+  font-weight: 400; 
+  float: left
+}
+
+.right-section .module .subtitle .time {
+  font-size: 14px;
+  font-weight: 200; 
+  float: right;
+}
+
+.right-section .module .content {
+  float: left;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 10px;
+  padding-bottom: 20px; 
+}
+
+.list {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.list li {
+  padding-left: 10px; 
+}
+
+.skill-list {
+  position: relative;
+  margin: 15px 0 15px 0;
+  overflow: hidden;
+  zoom: 1;
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.skill-list .skill {
+  position: relative;
+  width: 215px;
+  float: left;
+  margin-top: 15px;
+}
+
+.skill-bar {
+  position: relative;
+  width: 180px;
+  height: 6px;
+  background-color: rgb(226, 227, 228); 
+}
+
+.skill-bar .value {
+  position: absolute;
+  z-index: 99;
+  background-color: rgb(48, 48, 48);
+  top: 0;
+  left: 0;
+  height: 6px;
+}
+

@@ -5,11 +5,71 @@ html(lang='zh')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    link(rel='stylesheet' href='css/bootstrap.min.css')
-    link(rel='stylesheet' href='css/customize.css')
+    link(rel='stylesheet' href='css/main.css')
   body
     div(class='container')
-      div(class='row shape')
-        div(class='col-xs-4 col-sm-4 col-md-4')
-          img(src='image/head.jpg' class="img-responsive img-circle")
-        div(class='col-xs-8 col-sm-8 col-md-8')
+      div(class='left-section')
+        div(class='head-pic')
+          img(src='image/head.jpg')
+        div(class='module')
+          h1(class='title') 个人简介
+          div(class='subtitle') PROFILE
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+        div(class='module')
+          h1(class='title') 教育背景
+          div(class='subtitle') EDUCATION
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+        div(class='module')
+          h1(class='title') 联系方式
+          div(class='subtitle') CONTACT
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+        div(class='module')
+          h1(class='title') 其他说明
+          div(class='subtitle') OTHERS
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+        div(class='module')
+          h1(class='title') PROFILE
+          div(class='subtitle') LOREEER
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+      div(class='right-section')
+        div(class='main-title')
+          h1(class='title') #{name}
+          br
+          h3(class='subtitle') #{title}
+        div(class='module')
+          h1(class='title') WORK EXPERIENCE
+          div(class='subtitle')
+            span(class='company') Company Name<br/>
+              span(class='job-position') Job Position
+            span(class='time') 2011&nbsp;-&nbsp;2012
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+            ul(class='list')
+              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          div(class='subtitle')
+            span(class='company') Company Name<br/>
+              span(class='job-position') Job Position
+            span(class='time') 2011&nbsp;-&nbsp;2012
+          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+            ul(class='list')
+              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+        div(class='module')
+          h1(class='title') SKILL & EXPERTIZE
+        div(class='skill-list')
+          div(class='skill')
+            div(class='skill-name') HTML
+            div(class='skill-bar') 
+              span(class='value' style='width: 50%')
+          div(class='skill')
+            div(class='skill-name') CSS
+            div(class='skill-bar') 
+              span(class='value' style='width: 40%')
+          div(class='skill')
+            div(class='skill-name') JavaScript
+            div(class='skill-bar') 
+              span(class='value' style='width: 80%')
+          div(class='skill')
+            div(class='skill-name') Python
+            div(class='skill-bar') 
+              span(class='value' style='width: 70%')

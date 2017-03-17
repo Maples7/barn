@@ -57,5 +57,9 @@ You are welcomed to review this project for more information you need.
 - [barn-starter](https://github.com/Maples7/barn-starter)
 - [barn-cli](https://github.com/Maples7/barn-cli)
 
+## Contributors
+- [Maples7](http://maples7.com/): Creator and maintainner of this project
+- [ShadoWwood](https://shadowwood.me/): Maker of the `default` theme
+
 ## License
 [MIT](LICENSE)
