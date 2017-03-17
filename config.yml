@@ -12,10 +12,6 @@ theme: default
 ### ...post issues or RPs to add more support of engines
 template_engine: pug
 
-######################################
-############### Theme ################
-######################################
-
 ## HTML templates should be compiled and rendered
 ## filenames should be kept the same with files in folder `content`
 ## that's to say, YAML with the same name would be used to render corresponding html template 
@@ -29,7 +25,7 @@ htmls:
 ############### Deploy ###############
 ######################################
 
-## deploy repo
+## deploy repos
 deploy:
   repos:
     github: git@github.com:Maples7/resume.git

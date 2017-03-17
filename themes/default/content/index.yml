@@ -2,5 +2,6 @@
 ## All key-value pairs can be used in html template of some theme specified in `config.yml`
 ## See https://github.com/Maples7/barn to catch more
 
-name: Li Qi
+pageTitle: 黎琦的简历 | maples7.com
+name: 黎琦
 age: 22
