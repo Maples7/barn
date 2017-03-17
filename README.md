@@ -59,7 +59,7 @@ You are welcomed to review this project for more information you need.
 
 ## Contributors
 - [Maples7](http://maples7.com/): Creator and maintainner of this project
-- [ShadoWwood](https://shadowwood.me/): Maker of the `default` theme
+- [ShadowWood](https://shadowwood.me/): Maker of the `default` theme
 
 ## License
 [MIT](LICENSE)
