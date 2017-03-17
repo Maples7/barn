@@ -22,13 +22,13 @@ A resume/CV generator, parsing information from YAML file and output a static we
 Checking the manual of this tool is the very first thing you should do.
 
 - barn init / i    
-Initiate a barn project using `git clone` with [Maples7/barn-starter](git@github.com:Maples7/barn-starter.git).
+Initiate a barn project using `git clone` with [Maples7/barn-starter](https://github.com/Maples7/barn-starter).
 
 - barn genrate / g   
 Generate ultimate static website to folder `dist`.
 
 - barn server / s     
-Watch any changes of any file and apply them to folder `dist` immediately, so you can browser `*.html` in folder `dist` to debug your page locally.
+Watch any changes of any file and apply them to folder `dist` immediately, so you can open `*.html` in folder `dist` with your browser to debug your page locally.
 
 - barn deploy / d      
 Deploy to a git-based server such as [Github Pages](https://pages.github.com/) and [Coding Pages](https://coding.net/help/doc/pages/).
@@ -52,6 +52,10 @@ Steps:
 5. Post a PR to this project to list your own theme inside `Themes` above, please note whether any other template engines are needed besides `pug` and I'll give the support in my code
 
 You are welcomed to review this project for more information you need.
+
+## Relatives
+- [barn-starter](https://github.com/Maples7/barn-starter)
+- [barn-cli](https://github.com/Maples7/barn-cli)
 
 ## License
 [MIT](LICENSE)
