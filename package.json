@@ -1,6 +1,7 @@
 {
   "name": "barn",
   "version": "0.0.1",
+  "private": true,
   "description": "A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on Github Pages.",
   "main": "index.js",
   "scripts": {
