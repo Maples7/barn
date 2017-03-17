@@ -1,5 +1,5 @@
 # Your information to render pages
-## All key-values can be used in html template of some theme specified in `config.yml`
+## All key-value pairs can be used in html template of some theme specified in `config.yml`
 ## See https://github.com/Maples7/barn to catch more
 
 name: Li Qi

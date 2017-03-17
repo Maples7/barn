@@ -17,6 +17,8 @@ template_engine: pug
 ######################################
 
 ## HTML templates should be compiled and rendered
+## filenames should be kept the same with files in folder `content`
+## that's to say, YAML with the same name would be used to render corresponding html template 
 ### do **NOT** add file extension in the end of each item, just the name
 ### we will detect the file extension according to `template_engine` config above
 htmls:
