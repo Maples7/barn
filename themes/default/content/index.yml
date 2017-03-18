@@ -3,5 +3,25 @@
 ## See https://github.com/Maples7/barn to catch more
 
 pageTitle: 黎琦的简历 | maples7.com
-name: 黎琦
+name: 黎  琦
 title: Web 后端开发
+profile: 
+  - 我是一名热爱编程的 Web 后端开发者，目前专注于 Node.js 技术栈，但曾经也使用过 PHP 和 Python，最近也开始对 Erlang 感兴趣。
+  - 平时我喜欢钻研和学习新技术，会定期阅读优秀的技术博客提升自己，自己也有撰写技术博客的习惯。
+  - 本人崇尚开源，当有一些感觉不错的想法时就会研究其实现原理或尝试造轮子。
+  - 高中时曾参加青少年奥林匹克信息学竞赛获得省级二等奖，给算法和数据结构打下了不错的基础。
+  - 目前希望寻求一份满意的 Web 后端开发的工作。
+education:
+  2012.9 - 2016.6: 山东大学 - 电气工程与自动化(卓越) - 本科
+contact:
+  邮箱: maples7@163.com
+  手机: 18366113579
+  微信: maples7_lq
+  居住地: 中国 广州 黄埔区
+others:
+  Github: github.com/Maples7
+  个人博客: maples7.com
+  知乎: zhihu.com/people/maples7
+  在线简历: cv.maples7.com
+
+english_version: cv.maples7.com/en.html

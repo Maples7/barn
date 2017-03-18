@@ -75,14 +75,12 @@ p {
 .main-title .title { 
   font-size: 50px;
   font-weight: 900;
-  letter-spacing: 10px;
   line-height: 50px;
 }
 
 .main-title .subtitle {
   font-size: 14px;
   font-weight: 800;
-  letter-spacing: 4px;
 }
 
 .module {
@@ -96,7 +94,7 @@ p {
 .module .title {
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: 4px;
+  padding-bottom: 10px;
 }
 
 .left-section .module {
@@ -115,15 +113,15 @@ p {
 }
 
 .left-section .module .subtitle {
-  margin-top: 12px; 
   font-size: 10px;
   font-weight: 800; 
 }
 
 .left-section .module .content {
-  margin-top: 12px;
+  margin-bottom: 2px;
   font-size: 10px;
   font-weight: 200;  
+  text-align: left;
 }
 
 .right-section .module {
@@ -173,10 +171,6 @@ p {
 .list {
   margin-left: 50px;
   margin-top: 15px;
-}
-
-.list li {
-  padding-left: 10px; 
 }
 
 .skill-list {

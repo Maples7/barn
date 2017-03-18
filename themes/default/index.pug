@@ -12,25 +12,32 @@ html(lang='zh')
         div(class='head-pic')
           img(src='image/head.jpg')
         div(class='module')
-          h1(class='title') 个人简介
-          div(class='subtitle') PROFILE
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          h1(class='title') 联系方式
+          each val, index in contact 
+            div(style='text-align: left; padding-left: 45px;')
+              span(class='subtitle')= index + ':  '
+              span(class='content')= val
+              br 
         div(class='module')
           h1(class='title') 教育背景
-          div(class='subtitle') EDUCATION
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          each val, index in education 
+            div(class='subtitle')= index
+            div(class='content')= val
         div(class='module')
-          h1(class='title') 联系方式
-          div(class='subtitle') CONTACT
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          h1(class='title') 个人简介
+          div(class='content') 
+            each item in profile
+              p(style='padding-bottom: 5px; text-indent: 10%')= item
         div(class='module')
           h1(class='title') 其他说明
-          div(class='subtitle') OTHERS
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          each val, index in others 
+            div(style='text-align: left; padding-left: 30px;')
+              span(class='subtitle')= index + ':  '
+              a(class='content' href= 'http://' + val)= val
+              br
         div(class='module')
-          h1(class='title') PROFILE
-          div(class='subtitle') LOREEER
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          h1(class='title' style='letter-spacing= 1px;') English Version
+          a(class='content' style='text-align: center;' href= 'http://' + english_version) #{english_version}
       div(class='right-section')
         div(class='main-title')
           h1(class='title') #{name}
