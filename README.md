@@ -54,6 +54,9 @@ Steps:
 
 You are welcomed to review this project for more information you need.
 
+## Debug
+`DEBUG=barn-cli barn [command]`: add `DEBUG=barn-cli` at the beginning of any command to get more information about the running status of program.
+
 ## Relatives
 - [barn-starter](https://github.com/Maples7/barn-starter)
 - [barn-cli](https://github.com/Maples7/barn-cli)
