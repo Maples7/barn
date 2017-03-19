@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   position: relative;
   vertical-align: baseline;
   line-height: inherit;
+  font-family: Lato,"PingFang SC","Microsoft YaHei",sans-serif;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   margin-left: auto;
   margin-right: auto; 
   width: 740px;
-  height: 100%;
+  min-height: 1096px;
   padding: 0 12px;
   border: 20px rgb(65, 64, 66) solid;
   display: block;
@@ -26,18 +27,14 @@ body {
   zoom: 1;
 }
 
-p {
-  font-size: 4px; 
-}
-
 .left-section {
-  position: relative;
+  position: absolute;
   float: left;
   width: 240px;
   height: 100%;
-  /*top: 0;
+  top: 0;
   left: 0;
-  bottom: 0;*/
+  bottom: 0;
   margin-left: -12px; 
   padding: 24px;
   background-color: rgb(226, 227, 228);
@@ -45,7 +42,7 @@ p {
 
 .right-section {
   position: relative;
-  float: left;
+  float: right;
   height: 100%;
   /*top: 0;
   right: 0;
@@ -69,26 +66,24 @@ p {
 
 .main-title {
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .main-title .title { 
   font-size: 50px;
   font-weight: 900;
-  letter-spacing: 10px;
   line-height: 50px;
 }
 
 .main-title .subtitle {
   font-size: 14px;
   font-weight: 800;
-  letter-spacing: 4px;
 }
 
 .module {
   position: relative;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   overflow: hidden;
   zoom: 1;
 }
@@ -96,11 +91,12 @@ p {
 .module .title {
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: 4px;
+  padding-bottom: 10px;
 }
 
 .left-section .module {
   text-align: center;
+  margin-top: 40px;
   /*margin-bottom: */
 }
 
@@ -115,19 +111,21 @@ p {
 }
 
 .left-section .module .subtitle {
-  margin-top: 12px; 
   font-size: 10px;
   font-weight: 800; 
+  padding-top: 10px; 
 }
 
 .left-section .module .content {
-  margin-top: 12px;
+  margin-bottom: 2px;
   font-size: 10px;
   font-weight: 200;  
+  text-align: left;
 }
 
 .right-section .module {
   text-align: left;
+  margin-top: 30px;
 }
 
 .right-section .module .title::after{
@@ -140,14 +138,11 @@ p {
   background-color: rgb(48, 48, 48);
 }
 
-.right-section .module .subtitle {
-  margin-top: 10px;
-}
-
 .right-section .module .subtitle .company {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900; 
-  float: left
+  float: left;
+  padding-bottom: 10px; 
 }
 
 .right-section .module .subtitle .company .job-position {
@@ -166,22 +161,16 @@ p {
   float: left;
   font-size: 14px;
   font-weight: 200;
-  margin-top: 10px;
-  padding-bottom: 20px; 
 }
 
 .list {
-  margin-left: 50px;
-  margin-top: 15px;
-}
-
-.list li {
-  padding-left: 10px; 
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .skill-list {
   position: relative;
-  margin: 15px 0 15px 0;
+  margin: -25px 0 15px 0;
   overflow: hidden;
   zoom: 1;
   width: 430px;

@@ -3,5 +3,61 @@
 ## See https://github.com/Maples7/barn to catch more
 
 pageTitle: 黎琦的简历 | maples7.com
-name: 黎琦
+head_pic: image/head.jpg
+icon: image/favicon.ico
+name: 黎  琦
 title: Web 后端开发
+
+profile: 
+  - 我是一名热爱编程的 Web 后端开发者，目前专注于 Node.js 技术栈，但曾经也使用过 PHP 和 Python，最近也开始对 Erlang 感兴趣。
+  - 平时我喜欢钻研和学习新技术，会定期阅读优秀的技术博客提升自己，自己也有撰写技术博客的习惯。
+  - 本人崇尚开源，当有一些感觉不错的想法时就会研究其实现原理或尝试造轮子。
+  - 高中时曾参加青少年奥林匹克信息学竞赛获得省级二等奖，给算法和数据结构打下了不错的基础。
+  - 目前希望寻求一份满意的 Web 后端开发的工作。
+
+education:
+  2012.9 - 2016.6: 山东大学 - 电气工程与自动化(卓越) - 本科
+
+contact:
+  邮箱: maples7@163.com
+  手机: 18366113579
+  微信: maples7_lq
+  居住地: 中国 广州 黄埔区
+
+others:
+  Github: github.com/Maples7
+  个人博客: maples7.com
+  知乎: zhihu.com/people/maples7
+  LinkedIn: linkedin.com/in/maples7/
+  在线简历: cv.maples7.com
+
+english_version: cv.maples7.com/en.html
+
+work_exprience: 
+- 
+  company_name: 多益网络
+  job_position: 互联网产品研发工程师
+  from: 2016.3/4/7
+  to: 至今
+  content: 主要负责使用 Node.js 技术栈进行 Web 后端开发，涉及 Express／Koa 框架、MySQL 关系型数据库、MongoDB 非关系型数据库、Redis 缓存数据库等。也曾简单使用 Vue.js 构建前端用户界面。在部分项目中还使用过 PHP 与 .NET Core 进行项目的构建和日常维护工作，对后端技术比较了解。
+  list:
+    游戏论坛: 前期搭建过程中负责活动模块和标签模块的撰写，目前已经独立接手整个项目，负责新需求的实现、日常维护、服务器部署和版本发布。项目主要采用 Express + Sequelize(MySQL) + Redis 的架构，由两部分的服务组成：靠前端的服务主要负责简单的页面逻辑和页面渲染（对 SEO 友好），后端的服务完全提供 RESTful 接口化的 JSON 数据返回，所以也同时给移动端 App 提供数据。
+    邮件收发件检测: 使用 Vue + Koa + MySQL 搭建一个对公司邮箱与主流邮件运营商之间的连通性检测的服务。制定一定的规则，调用公司邮箱服务发件接口给主流邮件运营商发件，一段时间后使用 IMAP 协议对收件情况进行检测并生成报告。构建时我主要负责 IMAP 收件检测，目前已独立接手项目进行日常维护。
+    帐号中心: 使用老版本原生 PHP 构建游戏帐号中心服务，对所有游戏和其他应用提供帐号的统一管理。目前我主要负责部分模块新需求的开发与维护。
+
+personal_work:
+  barn: 
+    link: https://github.com/Maples7/barn
+    content: 用于自动生成、部署在线简历到 GitHub Pages 等服务上的一套 CLI 工具，可以视为 Hexo 的简历版本。本简历即使用本工具生成。
+  express-mount-routes: 
+    link: https://github.com/Maples7/express-mount-routes
+    content: 用于按约定标准自动从文件系统中加载 Express 路由及对应的 Controllers。
+  express-final-response: 
+    link: https://github.com/Maples7/express-final-response
+    content: Express 的最后一个中间件，用于封装任何请求的返回数据，同时支持返回 JSON 、渲染 HTML 页面返回以及处理请求错误。
+
+skill: 
+  Node.js / JavaScript / C: 90%
+  PHP / Python / C++: 70%
+  HTML / Erlang / Shell: 50%
+  CSS: 30%
