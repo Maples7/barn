@@ -48,7 +48,7 @@ work_exprience:
 personal_work:
   barn: 
     link: https://github.com/Maples7/barn
-    content: 用于自动生成、部署在线简历到 GitHub Pages 等服务上的一套 CLI 工具，可以视为 Hexo 的简历版本。本简历即使用本工具生成。
+    content: 用于自动生成、部署在线简历到 GitHub Pages 等服务上的一套 CLI 工具，可以视为 Hexo 的简历版本。本简历即使用该工具生成。
   express-mount-routes: 
     link: https://github.com/Maples7/express-mount-routes
     content: 用于按约定标准自动从文件系统中加载 Express 路由及对应的 Controllers。
