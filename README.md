@@ -13,9 +13,9 @@ A resume/CV generator, parsing information from YAML file and output a static we
 1. `barn init`: init a barn folder using `git clone`, so make sure you are connecting to the `www`
 2. `cd barn-starter`
 3. fill `config.yml` with your own customized configs
-4. fill YAML files in folder `themes/${your theme}/content/` with your own infomation
-5. make use of `barn server` to debug your page and repeat step 3-5 until it satisfies you
-6. `barn deploy`: deploy to your own github resume project
+4. fill YAML files in folder `themes/${your theme}/content/` with your own information
+5. make use of `barn server` to debug your pages and repeat step 3-5 until it satisfies you
+6. `barn deploy`: deploy to your own github resume repository      
 7. trun on Github Pages, see [https://pages.github.com/](https://pages.github.com/) for more instruction
 
 ### Commands
@@ -29,7 +29,7 @@ Initiate a barn project using `git clone` with [Maples7/barn-starter](https://gi
 Generate ultimate static website to folder `dist`.
 
 - barn server / s     
-Watch any changes of any file and apply them to folder `dist` immediately, so you can open `*.html` in folder `dist` with your browser to debug your page locally.
+Watch any changes of any files and apply them to folder `dist` immediately, so you can open `*.html` in folder `dist` with your browser to debug your pages locally.
 
 - barn deploy / d      
 Deploy to a git-based server such as [Github Pages](https://pages.github.com/) and [Coding Pages](https://coding.net/help/doc/pages/).
@@ -49,7 +49,7 @@ Steps:
 1. On Github, create a barn theme project
 2. Put all html templates in the root directory `./`, all css files in `./css/` and all images in `./image/`
 3. Make starter YAML files for information needed to render pages in `./content/` to tell user what they should provide
-4. Full tests and detail document are required in your own theme proejct
+4. Full tests and detail document are required in your own theme project
 5. Post a PR to this project to list your own theme inside `Themes` block above, please note whether any other template engines are needed besides `pug` and I'll give some support in my code
 
 You are welcomed to review this project for more information you need.
