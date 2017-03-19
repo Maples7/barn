@@ -6,11 +6,12 @@ html(lang='zh')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     link(rel='stylesheet' href='css/main.css')
+    link(rel='icon' href=icon type="image/x-icon")
   body
     div(class='container')
       div(class='left-section')
         div(class='head-pic')
-          img(src='image/head.jpg')
+          img(src= head_pic)
         div(class='module')
           h1(class='title') 联系方式
           each val, index in contact 
@@ -22,10 +23,10 @@ html(lang='zh')
           h1(class='title') 教育背景
           each val, index in education 
             div(class='subtitle')= index
-            div(class='content')= val
+            div(class='content' style='text-align: center;')= val
         div(class='module')
           h1(class='title') 个人简介
-          div(class='content') 
+          div(class='content' style='padding-left: 10px;') 
             each item in profile
               p(style='padding-bottom: 5px; text-indent: 10%')= item
         div(class='module')
@@ -33,50 +34,46 @@ html(lang='zh')
           each val, index in others 
             div(style='text-align: left; padding-left: 30px;')
               span(class='subtitle')= index + ':  '
-              a(class='content' href= 'http://' + val)= val
+              a(class='content' href= 'http://' + val target='_blank')= val
               br
         div(class='module')
           h1(class='title' style='letter-spacing= 1px;') English Version
           a(class='content' style='text-align: center;' href= 'http://' + english_version) #{english_version}
+
       div(class='right-section')
         div(class='main-title')
           h1(class='title') #{name}
           br
           h3(class='subtitle') #{title}
         div(class='module')
-          h1(class='title') WORK EXPERIENCE
-          div(class='subtitle')
-            span(class='company') Company Name<br/>
-              span(class='job-position') Job Position
-            span(class='time') 2011&nbsp;-&nbsp;2012
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
-            ul(class='list')
-              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
-              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
-          div(class='subtitle')
-            span(class='company') Company Name<br/>
-              span(class='job-position') Job Position
-            span(class='time') 2011&nbsp;-&nbsp;2012
-          div(class='content') A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
-            ul(class='list')
-              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
-              li A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the Github Pages. Exactly like Hexo for generating resume static website.
+          h1(class='title') 工作经历
+          each item in work_exprience
+            div(class='subtitle')
+              span(class='company')= item.company_name
+                br
+                span(class='job-position')= item.job_position
+              span(class='time')= item.from + ' - ' + item.to
+            div(class='content')= item.content
+              ul(class='list')
+                each val, index in item.list
+                  li(style="padding-bottom: 2px;")
+                    span(style='font-weight: 900')= index + '：'
+                    span= val
         div(class='module')
-          h1(class='title') SKILL & EXPERTIZE
+          h1(class='title') 个人作品
+            div(class='content' style='margin-top: 7px;')
+              ul(class='list')
+                each val, index in personal_work
+                  li
+                    a(style='font-weight: 900' href= val.link target='_blank')= index + ': '
+                    span= val.content
+
+        div(class='module')
+          h1(class='title') 技能评估
         div(class='skill-list')
-          div(class='skill')
-            div(class='skill-name') HTML
-            div(class='skill-bar') 
-              span(class='value' style='width: 50%')
-          div(class='skill')
-            div(class='skill-name') CSS
-            div(class='skill-bar') 
-              span(class='value' style='width: 40%')
-          div(class='skill')
-            div(class='skill-name') JavaScript
-            div(class='skill-bar') 
-              span(class='value' style='width: 80%')
-          div(class='skill')
-            div(class='skill-name') Python
-            div(class='skill-bar') 
-              span(class='value' style='width: 70%')
+          each val, index in skill
+            div(class='skill')
+              div(class='skill-name')= index
+              div(class='skill-bar') 
+                span(class='value' style= 'width: ' + val)
+            
