@@ -4,6 +4,8 @@
 **[Online Demo](http://cv.maples7.com/)**     
 A resume/CV generator, parsing information from YAML file to generate a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like resume-version [Hexo](https://hexo.io/).
 
+**_(More needs before publishing v1.0.0? [discuss here](https://github.com/Maples7/barn/issues/1)!)_**
+
 ## Usage
 ### Installation
 `[sudo] npm install -g barn-cli` or `[sudo] yarn global add barn-cli`     
