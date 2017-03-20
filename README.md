@@ -2,7 +2,7 @@
 [![NPM](https://nodei.co/npm/barn-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/barn-cli/)
 [![NPM](https://nodei.co/npm-dl/barn-cli.png?months=6&height=3)](https://nodei.co/npm/barn-cli/)    
 **[Online Demo](http://cv.maples7.com/)**     
-A resume/CV generator, parsing information from YAML file and output a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like resume-version [Hexo](https://hexo.io/).
+A resume/CV generator, parsing information from YAML file to generate a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like resume-version [Hexo](https://hexo.io/).
 
 ## Usage
 ### Installation
