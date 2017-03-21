@@ -36,9 +36,10 @@ html(lang='zh')
               span(class='subtitle')= index + ':  '
               a(class='content' href= 'http://' + val target='_blank')= val
               br
-        div(class='module')
-          h1(class='title' style='letter-spacing= 1px;') English Version
-          a(class='content' style='text-align: center;' href= 'http://' + english_version) #{english_version}
+        if english_version
+          div(class='module')
+            h1(class='title' style='letter-spacing= 1px;') English Version
+            a(class='content' style='text-align: center;' href= 'http://' + english_version) #{english_version}
 
       div(class='right-section')
         div(class='main-title')
@@ -65,8 +66,11 @@ html(lang='zh')
               ul(class='list')
                 each val, index in personal_work
                   li
-                    a(style='font-weight: 900' href= val.link target='_blank')= index + ': '
-                    span= val.content
+                    if val.link
+                      a(style='font-weight: 900' href= val.link target='_blank')= index
+                    else 
+                      span(style='font-weight: 900')= index
+                    span= ': ' + val.content
 
         div(class='module')
           h1(class='title') 技能评估
