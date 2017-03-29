@@ -58,8 +58,11 @@ html(lang='en')
               ul(class='list')
                 each val, index in item.list
                   li(style="padding-bottom: 2px;")
-                    span(style='font-weight: 900')= index + '：'
-                    span= val
+                    if val.link
+                       a(style='font-weight: 900' href= val.link target='_blank')= index
+                    else 
+                      span(style='font-weight: 900')= index
+                    span= ': ' + val.content
         div(class='module')
           h1(class='title') Open Source
             div(class='content' style='margin-top: 7px;')

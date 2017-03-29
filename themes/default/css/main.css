@@ -125,7 +125,7 @@ body {
 
 .right-section .module {
   text-align: left;
-  margin-top: 30px;
+  margin-top: -15px;
 }
 
 .right-section .module .title::after{
@@ -170,7 +170,7 @@ body {
 
 .skill-list {
   position: relative;
-  margin: -25px 0 15px 0;
+  margin: -45px 0 15px 0;
   overflow: hidden;
   zoom: 1;
   width: 430px;
