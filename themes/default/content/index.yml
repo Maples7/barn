@@ -30,6 +30,7 @@ others:
   知乎: zhihu.com/people/maples7
   LinkedIn: linkedin.com/in/maples7/
   在线简历: cv.maples7.com
+  英语能力: CET-6
 
 # optional
 english_version: cv.maples7.com/en.html
@@ -40,11 +41,15 @@ work_exprience:
   job_position: 互联网产品研发工程师
   from: 2016.3/4/7
   to: 至今
-  content: 主要负责使用 Node.js 技术栈进行 Web 后端开发，涉及 Express／Koa 框架、MySQL 关系型数据库、MongoDB 非关系型数据库、Redis 缓存数据库等。也曾简单使用 Vue.js 构建前端用户界面。在部分项目中还使用过 PHP 与 .NET Core 进行项目的构建和日常维护工作，对后端技术比较了解。
+  content: 主要负责使用 Node.js 技术栈进行 Web 后端开发，涉及 Express／Koa 框架、MySQL、MongoDB、Redis 等。也曾简单使用 Vue.js 构建前端用户界面。在部分项目中还使用过 PHP 与 .NET Core 进行项目的构建和日常维护工作，对后端技术比较了解。
   list:
-    游戏论坛: 前期搭建过程中负责活动模块和标签模块的撰写，目前已经独立接手整个项目，负责新需求的实现、日常维护、服务器部署、版本发布、性能优化等从写代码到上线的完整流程。项目主要采用 Express + Sequelize(MySQL) + Redis 的架构，由两部分的服务组成：靠前端的服务主要负责简单的页面逻辑和页面渲染，后端的服务完全提供 RESTful 接口化的 JSON 数据返回，所以也同时给移动端 App 提供数据。
-    邮件收发件检测: 使用 Vue + Koa + MySQL 搭建一个对公司邮箱与主流邮件运营商之间的连通性检测的服务。通过后台制定一定的规则，调用公司邮箱服务发件接口给主流邮件运营商发件，一段时间后使用 IMAP 协议对收件情况进行检测并生成报告。构建时我主要负责 IMAP 收件检测，目前已独立接手项目进行日常维护。
-    帐号中心: 使用老版本原生 PHP 构建游戏帐号中心服务，对所有游戏和其他应用提供帐号的统一管理。目前我主要负责部分模块新需求的开发与维护。
+    游戏论坛: 
+      link: https://bbs.duoyi.com/
+      content: 前期搭建过程中负责活动模块和标签模块的撰写，目前已经独立接手整个项目，负责新需求的实现、日常维护、服务器部署、版本发布、性能优化等从写代码到上线的完整流程。项目主要采用 Express + MySQL + Redis 的架构，由两部分的服务组成：靠前端的服务主要负责简单的页面逻辑和页面渲染，后端的服务完全提供 RESTful 接口化的 JSON 数据返回，所以也同时给移动端 App 提供数据。本项目使我对 Node.js 工业实践中搭建文档系统（Swagger）、自动化测试（ava/nyc）、日志系统（ELK）、统一数据返回、MVC 分层架构、合理使用缓存等问题的最佳实践有了更为深刻的理解。
+    邮件收发件检测: 
+      content: 使用 Vue + Koa + MySQL 搭建一个对公司邮箱与主流邮件运营商之间的连通性检测的服务。通过后台制定规则，调用公司邮箱服务发件接口给主流邮件运营商发件，一段时间后使用 IMAP 协议对收件情况进行检测并生成报告。构建时我主要负责 IMAP 收件检测，目前已独立接手项目进行日常维护。
+    帐号中心: 
+      content: 使用老版本原生 PHP 构建游戏帐号中心服务，对所有游戏和其他应用提供帐号的统一管理。目前我主要负责部分模块新需求的开发与维护以及对部分数据的处理和分析。
 
 # `link` in each key is optional
 personal_work:
@@ -57,9 +62,12 @@ personal_work:
   express-final-response: 
     link: https://github.com/Maples7/express-final-response
     content: Express 的最后一个中间件，用于封装任何请求的返回数据，同时支持返回 JSON 、渲染 HTML 页面返回以及处理请求错误。
+  其他: 
+    link: https://github.com/Maples7/
+    content: api-usage-rate、node-redis-cache、clean-promise 等，查看我的 GitHub 以了解更多……
 
 skill: 
-  Node.js / JavaScript / C: 90%
+  Node.js / JS / C / Git: 90%
   PHP / Python / C++: 70%
   HTML / Erlang / Shell: 50%
-  CSS: 30%
+  CSS / ELK: 30%
