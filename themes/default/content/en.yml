@@ -43,11 +43,11 @@ work_exprience:
   list:
     Game BBS: 
       # link: https://bbs.duoyi.com/
-      content: Tag and Activity modules are under my responsibility while in building process. And nowadays I have took full responsibility for this project alone, which means a serial of integrated jobs in process pipeline from code to running online including implementation of new demands, routine maintenance, deployment on servers, publish of new version, performance optimization and more. This project is based on Express, MySQL and Redis and consists of 2 parts —— service in user side handles pages' logic and rendering and the one in server side only provides JSON data with pure RESTful APIs for front-end and mobile end. This project gives a deeper thought about document system (Swagger), auto-test (ava/nyc), log system (ELK), standard return format, MVC layer, how to use cache and so on.
+      content: Tag and Activity modules are under my responsibility while in building process. And nowadays I have took full responsibility for this project alone, which means a serial of integrated jobs in process pipeline from code to running online including implementation of new demands, routine maintenance, deployment on servers, publish of new version, performance optimization and more. This project is based on Express, MySQL and Redis and consists of 2 parts —— service in user side handles pages' logic and rendering and the one in server side only provides JSON data with pure RESTful APIs for front-end and mobile end. This project brings me a deeper thought about document system, auto-test, log system, standard return format, MVC layer, how to use cache and so on.
     Email Detector: 
       content: With Vue, Koa and MySQL, this comes to be a detector of whether the email service in our company does work well with other email services. By making rules backstage, this service sends emails to other email services through API of our one and try to receive them by IMAP protocol after a while. That IMAP part was my cake while building and I take full responsibility for this project nowadays, too.
     Account Center: 
-      content: It's an account center based on old-version PHP who manages all accounts of games and other applications. I meddle in several parts of it on new needs and data analysis.
+      content: It's an account center built on old-version PHP who manages all accounts of games and other applications. I meddle in several parts of it on new needs and data analysis.
 
 # `link` in each key is optional
 personal_work:
