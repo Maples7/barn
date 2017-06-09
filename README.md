@@ -49,7 +49,7 @@ You can download any themes above and put them in folder `themes` and apply any 
 Steps:
 1. On Github, create a barn theme project
 2. Put all html templates in the root directory `./`, all css files in `./css/` and all images in `./image/`
-3. Make starter YAML files for information needed to render pages in `./content/` to tell user what they should provide
+3. Make starter YAML files for information needed to render pages in `./content/` to tell users what they should provide
 4. Full tests and detail document are required in your own theme project
 5. Post a PR to this project to list your own theme inside `Themes` block above, please note whether any other template engines are needed besides `pug` and I'll give some support in my code
 
