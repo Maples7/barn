@@ -47,7 +47,7 @@ You can download any themes above and put them in folder `themes` and apply any 
 
 #### How to make my own themes
 Steps:
-1. On Github, create a barn theme project
+1. On Github, create a barn theme project whose name is supposed to follow pattern `barn-theme-XXXX`
 2. Put all html templates in the root directory `./`, all css files in `./css/` and all images in `./image/`
 3. Make starter YAML files for information needed to render pages in `./content/` to tell users what they should provide
 4. Full tests and detail document are required in your own theme project
