@@ -38,3 +38,5 @@ jspm_packages
 
 # deploy folder
 dist
+
+.vscode
