@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,7 +87,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   position: relative;
   vertical-align: baseline;
   line-height: inherit;
-  font-family: Lato,"PingFang SC","Microsoft YaHei",sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 body {
@@ -15,17 +95,17 @@ body {
 }
 
 em {
-  font-weight: 400
+  font-weight: 400;
 }
 
 .container {
   /*position: relative;*/
   margin-left: auto;
-  margin-right: auto; 
-  width: 740px;
+  margin-right: auto;
+  width: 940px;
   min-height: 1096px;
   padding: 0 12px;
-  border: 20px rgb(65, 64, 66) solid;
+  border: 10px rgb(65, 64, 66) solid;
   display: block;
   overflow: hidden;
   zoom: 1;
@@ -39,7 +119,7 @@ em {
   top: 0;
   left: 0;
   bottom: 0;
-  margin-left: -12px; 
+  margin-left: -12px;
   padding: 24px;
   background-color: rgb(226, 227, 228);
 }
@@ -51,8 +131,8 @@ em {
   /*top: 0;
   right: 0;
   bottom: 0;*/
-  margin-right: -12px; 
-  width: 428px;
+  margin-right: -12px;
+  width: 628px;
   padding: 24px;
   background: rgb(255, 255, 255);
 }
@@ -73,14 +153,14 @@ em {
   margin-bottom: 30px;
 }
 
-.main-title .title { 
-  font-size: 50px;
+.main-title .title {
+  font-size: 42px;
   font-weight: 900;
-  line-height: 50px;
+  line-height: 32px;
 }
 
 .main-title .subtitle {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -104,36 +184,36 @@ em {
   /*margin-bottom: */
 }
 
-.left-section .module .title::after{
-  content: "";
+.left-section .module .title::after {
+  content: '';
   width: 40px;
   height: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(48, 48, 48); 
+  background-color: rgb(48, 48, 48);
 }
 
 .left-section .module .subtitle {
-  font-size: 10px;
-  font-weight: 800; 
-  padding-top: 10px; 
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 10px;
 }
 
 .left-section .module .content {
   margin-bottom: 2px;
-  font-size: 10px;
-  font-weight: 200;  
+  font-size: 15px;
+  font-weight: 200;
   text-align: left;
 }
 
 .right-section .module {
   text-align: left;
-  margin-top: -15px;
+  margin-top: -25px;
 }
 
-.right-section .module .title::after{
-  content: "";
+.right-section .module .title::after {
+  content: '';
   width: 40px;
   height: 2px;
   display: block;
@@ -143,28 +223,29 @@ em {
 }
 
 .right-section .module .subtitle .company {
-  font-size: 16px;
-  font-weight: 900; 
+  font-size: 18px;
+  font-weight: 900;
   float: left;
-  padding-bottom: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .right-section .module .subtitle .company .job-position {
   font-size: 14px;
-  font-weight: 400; 
-  float: left
+  font-weight: 400;
+  float: left;
 }
 
 .right-section .module .subtitle .time {
-  font-size: 14px;
-  font-weight: 200; 
+  font-size: 16px;
+  font-weight: 200;
   float: right;
 }
 
 .right-section .module .content {
   float: left;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 320;
 }
 
 .list {
@@ -177,14 +258,14 @@ em {
   margin: -45px 0 15px 0;
   overflow: hidden;
   zoom: 1;
-  width: 430px;
+  width: 630px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .skill-list .skill {
   position: relative;
-  width: 215px;
+  width: 315px;
   float: left;
   margin-top: 15px;
 }
@@ -193,7 +274,7 @@ em {
   position: relative;
   width: 180px;
   height: 6px;
-  background-color: rgb(226, 227, 228); 
+  background-color: rgb(226, 227, 228);
 }
 
 .skill-bar .value {
@@ -204,4 +285,3 @@ em {
   left: 0;
   height: 6px;
 }
-
