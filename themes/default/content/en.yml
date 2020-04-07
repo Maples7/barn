@@ -9,16 +9,19 @@ name: Li Qi
 title: Back-End Web Developer
 
 profile:
-  - I'm a back-end web developer who has a passion for coding. For now I mainly concentrate on Node.js tech stack, but can also share some coding experience on PHP and Python. Moreover, Erlang/Elixir attracts me recently. I love study new tech and have a regular custom to learn from outstanding tech blogs and create my own.
-  - I'm very positive about open source and would research how to implement it or just "make the wheel" when I got some good ideas. In high school, I used to attend the NOIP (National Olympiad in Informatics in Provinces) and win the 2rd prize, which lays a solid foundation for my knowledge about Data Structure and Algorithm.
-  - Now, I'd like to get a chance to work as a back-end web developer in a great company.
+  - I'm a web backend engineer working daily with Node.js/Python/Elixir, and currently have an exploratory interest in Rust and Swift.
+  - I love to create value with code, I love to drill down and learn new technologies. I regularly read excellent technical books and technical blogs to improve myself, and I also have a habit of writing technical blogs myself.
+  - I am a proponent of open source, and when there are good ideas I will work on their implementation or try to "build wheels".
+  - In high school, I won a provincial second prize in the NOIP (National Olympiad in Informatics in Provinces) which lays a solid foundation for my knowledge about Data Structure and Algorithm.
+  - In my spare time, I love to read and am a MOOC enthusiast who enjoys the time of studying alone.
 
 education:
-  2012.9 - 2016.6: Shandong University - Electric Engineering and Automation(Excellence Program) - Bachelor
+  2012.9 - 2016.6: Shandong University - Electric Engineering and Automation (Excellence Program) - Bachelor
+  2009.7 - 2012.6: Changjun High School - Science Experimental Class
 
 contact:
   Email: maples7@163.com
-  Phone: 183*******9
+  Phone: 18366113579
   WeChat: maples7_lq
   Location: Beijing, China
 
@@ -34,34 +37,44 @@ others:
 chinese_version: cv.maples7.com
 
 work_exprience:
+  - company_name: Seniverse
+    job_position: Head of Back-End R&D
+    from: 2017.6
+    to: Now
+    content: As the backend leader, I work with the CTO to design and implement a complete architecture for the entire backend weather data processing process - from data collection to data distribution. The data processing part mainly involves the management of data processing task flow and the storage scheme for different data types, so it's about how to process and store data quickly and efficiently, mainly via the Python technology stack; the data distribution part is to build a stable API system that can carry high concurrent requests, including the design optimization of full request links from SLB to microservices, as well as an official website providing self-service single provisioning system, mainly via the Node.js and Elixir technology stack.
+    list:
+      API v4 - Hogwarts:
+        link: https://api.seniverse.com/v4
+        content: It's a completely new API architecture designed and implemented relative to the older v3 systems, primarily to address the user experience and concurrency performance issues of the v3 API. The underlying services are mostly completely redesigned and implemented with Elixir (previously Node.js), stripping away the gateway logic and stateless data services. In <em>user usage</em>, Google+'s Partial Response protocol has been implemented so that the interface supports user-defined combinations of arbitrary fields to be returned; In terms of <em>interface performance</em>, internal services use Erlang's native RPC protocol for I/O communication, while redesigning the data storage method to rely on OSS for underlying storage, normalizing meteorological data through a standard binary matrix arrangement, and using multi-level caching to improve access performance; In <em>service stability</em>, completely designed and developed with the concept of Cloud Native, the whole system is deployed on the Kubernetes cluster of Aliyun, and achieved automatic scaling; In terms of <em>development efficiency</em>, we think about the flow of data throughout the system from a higher level of "meta-programming" and "metaflow" as much as possible, and design unified specifications and standards as the underlying support for the upper-level data flow needs, so that developers are usually developing platforms and rules, while specific single data development and iteration needs can be quickly validated and put it online through simple configuration. I was primarily responsible for the design of the majority of the system architecture, standards and specifications, working with members of my group to complete the development job.
+      Official Website v3 - Hansel:
+        link: https://seniverse.com/
+        content: Primarily based on the NestJS framework, I uses TypeScript to design and implement the backend services of the official website that support both the front and backend. Modules can be divided into Organization, User, Order, Transaction, Product Definition, Product Instance, etc. Starting with the pre-technical selection, I was personally responsible for the service building, code organization, most of the module implementations, and the final formal go-online of the service.
+      Data Acquisition System - Scorpio:
+        link: https://www.processon.com/view/link/599cf06be4b0abd6112d9f68
+        content: For weather site data, I use the Celery/RabbitMQ task queue in Python3 to implement distributed crawling, pre-screening, data fusion between different data sources, post-processing standardization, and storage into the library. In between, Statsd/Graphite is used to monitor task processing status and system key metrics. Finally, the program is packaged for deployment using Twitter's PEX tool. I was responsible for the full design and implementation of the system. For professional grid data, Airflow was used to manage the ETL task flow, and I was responsible for the implementation and maintenance of most of the data flow.
+      Kong Gateway-based Microservice Architecture - Halo:
+        content: Based on the open source gateway system Kong, the gateway service was secondary-customized developed with Lua to fit its own business, with the aim of splitting user logic and stateless data interface logic, making the system easier to maintain and scale. Its main functions include the verification of request parameters, user authentication, logging of user-related requests, access statistics and deductions, access rate limits, etc. It includes an implementation of a simple time series database for graphical presentation of different time latitudes of the access volume. The final service is deployed in the Kubernetes cluster. I was responsible for majority development, maintenance and iteration of Plugins.
   - company_name: Duoyi Network
     job_position: Back-End Web Developer
     from: 2016.3/4/7
     to: 2017.5
-    content: For now I mainly work as a back-end web developer with Node.js tech stack, which involves Express/Koa framework, MySQL, MongoDB, Redis and so on. I also used to briefly build front-end user interface with Vue.js. In other projects, PHP and .NET Core are required for me to work with to build applications. In general, I'm a back-end guy.
+    content: I was mainly responsible for web backend development using Node.js technology stack, involving Express/Koa framework, MySQL, MongoDB, Redis, etc.
     list:
       Game BBS:
-        # link: https://bbs.duoyi.com/
-        content: Tag and Activity modules are under my responsibility while in building process. And nowadays I have took full responsibility for this project <em>alone</em>, which means <em>a serial of integrated jobs in process pipeline from code to running online including implementation of new demands, routine maintenance, deployment on servers, publish of new version, performance optimization and more</em>. This project is based on Express, MySQL and Redis and consists of 2 parts —— service in user side handles pages' logic and rendering and the one in server side only provides JSON data with pure RESTful APIs for front-end and mobile end. This project brings me a deeper thought about <em>document system, automated testing, log system, standard return format, MVC layer architecture and how to use cache</em>.
-      Email Detector:
-        content: With Vue, Koa and MySQL, this comes to be a detector of whether the email service in our company does work well with other email services. By making rules backstage, this service sends emails to other email services through API and try to receive them under IMAP protocol after a while. That IMAP part was my cake while building and I take full responsibility for this project nowadays, too.
-      Account Center:
-        content: It's an account center built on old-version PHP who manages all accounts of games and other applications. I meddle in several parts of it on new needs and data analysis.
+        link: https://bbs.duoyi.com/
+        content: In the early stage, I was responsible for writing the Activity module and Tag module, and in the later stage, I took over the entire project independently, including the implementation of new needs, daily maintenance, server deployment, new releases, performance optimization, and other complete processes from writing code to going online. The project is mainly based on the Express + MySQL + Redis architecture and consists of two parts. The front-end service is mainly responsible for simple page logic and page rendering, and the back-end service provides RESTful interface returning JSON data, so it also provides data to the mobile app. This project has given me a deeper understanding of best practices for building document systems, automating testing, logging systems, unified data return, MVC hierarchical architecture, rational use of caches, and other issues in Node.js industrial practice.
 
 # `link` in each key is optional
 personal_work:
   barn:
     link: https://github.com/Maples7/barn
     content: A CLI tool which generates and deploy resumes on Github Pages automatically. Exactly like resume-version Hexo. Needless to say, this resume is generated by this tool.
-  express-mount-routes:
-    link: https://github.com/Maples7/express-mount-routes
-    content: An Express package to load routes and controllers automatically from file system. Why? CoC(Configuration over Convention)!
-  express-final-response:
-    link: https://github.com/Maples7/express-final-response
-    content: The very last middleware of Express to handle every response of every request. JSON or HTML response and error handling are all supported synchronously.
+  Others:
+    link: https://github.com/Maples7/
+    content: kong-config-manager、clean-promise、node-redis-cache, etc. Check my GitHub to know more.
 
 skill:
-  Node.js / C / Git: 90%
-  PHP / Python / C++: 70%
-  HTML / Erlang / Shell: 50%
-  CSS / C#: 30%
+  Node.js / Elixir / Git: 90%
+  Python / TypeScript / C: 70%
+  Erlang / Docker / Shell: 50%
+  Kubernetes / DevOps: 30%

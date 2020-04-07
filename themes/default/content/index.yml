@@ -49,7 +49,7 @@ work_exprience:
       官网 v3 - Hansel:
         link: https://seniverse.com/
         content: 主要是基于 NestJS 框架，使用 TypeScript 设计和实现了同时支持前台和后台的官网后端服务。功能上支持用户在官网自主下单、支付、开通 API 服务的全流程，模块主要可以划分为组织、用户、订单、交易、产品定义、产品实例等。个人负责了从前期技术选型开始的服务构建和代码组织、大部分模块的实现以及最后的服务正式上线工作。
-      站点数据采集系统 - Scorpio:
+      数据采集系统 - Scorpio:
         link: https://www.processon.com/view/link/599cf06be4b0abd6112d9f68
         content: 对于天气站点数据，在 Python3 体系下用 Celery/RabbitMQ 任务队列实现了分布式抓取、前期筛选处理、不同数据源的数据融合、后期处理标准化、存储入库的过程。其间使用 Statsd/Graphite 来监控任务处理状态和系统关键指标。最后用 Twitter 的 PEX 工具对程序进行打包部署。个人负责了该系统全部的设计和实现。对于专业格点数据，使用 Airflow 来管理 ETL 任务流，个人负责了大部分数据流程的实现和维护。
       基于 Kong 网关的微服务架构设计与实现 - Halo:
@@ -75,6 +75,6 @@ personal_work:
 
 skill:
   Node.js / Elixir / Git: 90%
-  Python / C / TypeScript: 70%
+  Python / TypeScript / C: 70%
   Erlang / Docker / Shell: 50%
   Kubernetes / DevOps: 30%
