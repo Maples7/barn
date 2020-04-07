@@ -102,7 +102,7 @@ em {
   /*position: relative;*/
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
+  width: 1060px;
   min-height: 1096px;
   padding: 0 12px;
   border: 10px rgb(65, 64, 66) solid;
@@ -114,7 +114,7 @@ em {
 .left-section {
   position: absolute;
   float: left;
-  width: 240px;
+  width: 253px;
   height: 100%;
   top: 0;
   left: 0;
@@ -131,9 +131,9 @@ em {
   /*top: 0;
   right: 0;
   bottom: 0;*/
-  margin-right: -12px;
-  width: 628px;
-  padding: 24px;
+  width: 760px;
+  padding: 20px;
+  padding-bottom: 11px;
   background: rgb(255, 255, 255);
 }
 
@@ -156,12 +156,13 @@ em {
 .main-title .title {
   font-size: 42px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 5px;
 }
 
 .main-title .subtitle {
   font-size: 20px;
   font-weight: 800;
+  padding-bottom: 8px;
 }
 
 .module {
@@ -175,7 +176,7 @@ em {
 .module .title {
   font-size: 18px;
   font-weight: 800;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
 }
 
 .left-section .module {
@@ -240,6 +241,7 @@ em {
   font-size: 16px;
   font-weight: 200;
   float: right;
+  padding-top: 5px;
 }
 
 .right-section .module .content {
@@ -258,14 +260,14 @@ em {
   margin: -45px 0 15px 0;
   overflow: hidden;
   zoom: 1;
-  width: 630px;
+  width: 755px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .skill-list .skill {
   position: relative;
-  width: 315px;
+  width: 360px;
   float: left;
   margin-top: 15px;
 }
