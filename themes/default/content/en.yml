@@ -41,7 +41,7 @@ work_exprience:
     job_position: Head of Back-End R&D
     from: 2017.6
     to: Now
-    content: As the backend leader, I work with the CTO to design and implement a complete architecture for the entire backend weather data processing process - from data collection to data distribution. The data processing part mainly involves the management of data processing task flow and the storage scheme for different data types, so it's about how to process and store data quickly and efficiently, mainly via the Python technology stack; the data distribution part is to build a stable API system that can carry high concurrent requests, including the design optimization of full request links from SLB to microservices, as well as an official website providing self-service single provisioning system, mainly via the Node.js and Elixir technology stack.
+    content: As the backend leader, I work with the CTO to design and implement a complete architecture for the entire backend weather data processing pipeline - from data collection to data distribution. The data processing part mainly involves the management of data processing task flow and the storage scheme for different data types, so it's about how to process and store data quickly and efficiently, mainly via the Python technology stack; the data distribution part is to build a stable API system that can carry high concurrent requests, including the design optimization of full request links from SLB to microservices, as well as an official website providing self-service single provisioning system, mainly via the Node.js and Elixir technology stack.
     list:
       API v4 - Hogwarts:
         link: https://api.seniverse.com/v4
