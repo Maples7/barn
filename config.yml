@@ -29,7 +29,6 @@ htmls:
 deploy:
   repos:
     github: git@github.com:Maples7/resume.git
-    coding: git@e.coding.net:maples7/resume.git
 
 ## CNAME
 ### If you have a custom domain, specify it here, e.g. cv.maples7.com

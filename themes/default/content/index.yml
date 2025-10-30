@@ -2,10 +2,10 @@
 ## All key-value pairs can be used in html template of some theme specified in `config.yml`
 ## See https://github.com/Maples7/barn to catch more
 
-pageTitle: 黎琦的简历 | maples7.com
+pageTitle: Maples7 的简历 | maples7.com
 head_pic: image/head.jpg
 icon: image/favicon.ico
-name: 黎  琦
+name: Maples7
 title: Web 后端开发
 
 profile:
@@ -37,10 +37,19 @@ others:
 english_version: cv.maples7.com/en.html
 
 work_exprience:
+  - company_name: 微软中国
+    job_position: 软件研发工程师
+    from: 2020.6
+    to: 2023.7
+    content: 主要为 SharePoint Online 产品做 DevOps 工作，具体包括升级项目 .NET 版本，制定 CI pipelines 规范，优化产品研发工程师开发、提交代码、测试、CI 集成等项目工程化的体验。
+    list:
+      升级 .NET 版本:
+        link: https://www.microsoft.com/en/microsoft-365/sharepoint/collaboration
+        content: 将 SharePoint Online 项目的 .NET 版本从 .NET 4 升级到 .NET 5。
   - company_name: 心知天气
     job_position: 后端研发负责人
     from: 2017.6
-    to: 至今
+    to: 2020.6
     content: 作为后端负责人，与 CTO 一起对整个后端天气数据处理流程——从数据采集到数据分发——进行完整的架构设计和实现：数据处理部分主要涉及对数据处理任务流的管理以及不同数据类型的存储方案，是关于如何快速高效地处理和存储数据的问题，主要是 Python 技术栈；数据分发部分主要是构建能承载高并发请求的稳定的 API 系统，包括从 SLB 到微服务的全请求链路的设计优化，同时还有一套官网自助下单开通服务的系统，主要是 Node.js 和 Elixir 技术栈。
     list:
       API v4 - Hogwarts:
@@ -66,12 +75,12 @@ work_exprience:
 
 # `link` in each key is optional
 personal_work:
+  BeanLedger:
+    link: https://apps.apple.com/app/beanledger/id6739036460
+    content: 独立开发iOS App，极简复式记账，一站式资产管家和投资助手。
   barn:
     link: https://github.com/Maples7/barn
     content: 用于自动生成、部署在线简历到 GitHub Pages 等服务上的一套 CLI 工具，可以视为 Hexo 的简历版本。本简历即使用该工具生成。
-  其他:
-    link: https://github.com/Maples7/
-    content: kong-config-manager、clean-promise、node-redis-cache 等，查看我的 GitHub 以了解更多……
 
 skill:
   Node.js / Elixir / Git: 90%
