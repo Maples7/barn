@@ -5,31 +5,29 @@
 pageTitle: Resume of Maples7 | maples7.com
 head_pic: image/head.jpg
 icon: image/favicon.ico
-name: Maples7
-title: Back-End Web Developer
+name: Harry Li (Maples7)
+title: Back-End Development + DevOps + iOS Development
 
 profile:
-  - I'm a web backend engineer working daily with Node.js/Python/Elixir, and currently have an exploratory interest in Rust and Swift.
-  - I love to create value with code, I love to drill down and learn new technologies. I regularly read excellent technical books and technical blogs to improve myself, and I also have a habit of writing technical blogs myself.
-  - I am a proponent of open source, and when there are good ideas I will work on their implementation or try to "build wheels".
-  - In high school, I won a provincial second prize in the NOIP (National Olympiad in Informatics in Provinces) which lays a solid foundation for my knowledge about Data Structure and Algorithm.
-  - In my spare time, I love to read and am a MOOC enthusiast who enjoys the time of studying alone.
+  - Started coding in high school for informatics olympiad competitions — over a decade later, code remains the medium I'm most skilled at and most passionate about.
+  - After college, worked on web backend at mid-sized and startup companies, then focused on engineering infrastructure at Microsoft. Now building iOS apps full-time as an indie developer.
+  - Love creating products that directly reach end users — drawn to the pure joy of building something from nothing, and prefer the pace and vibe of startups.
+  - In the age of AI, the essence of programming is shifting from "writing code" to "building products" — aiming to leverage AI to create truly outstanding, valuable products.
+  - Investing enthusiast. Believer in long-termism — getting wealthy the right way.
 
 education:
-  2012.9 - 2016.6: Shandong University - Electric Engineering and Automation (Excellence Program) - Bachelor
+  2012.9 - 2016.6: Shandong University - Electrical Engineering and Automation (Honours) - Bachelor
   2009.7 - 2012.6: Changjun High School - Science Experimental Class
 
 contact:
   Email: maples7@163.com
   Phone: 183*****579
   WeChat: maples7_lq
-  Location: Soochow, China
+  Location: Suzhou, China
 
 others:
   GitHub: github.com/Maples7
   Blog: maples7.com
-  Zhihu: zhihu.com/people/maples7
-  LinkedIn: linkedin.com/in/maples7/
   Resume: cv.maples7.com
   English Level: CET-6
 
@@ -37,53 +35,68 @@ others:
 chinese_version: cv.maples7.com
 
 work_experience:
-  - company_name: Microsoft
-    job_position: Software Development Engineer
+  - company_name: Indie Development
+    job_position: Indie iOS Developer
+    from: 2023.7
+    to: Present
+    content: Single-handedly covered the entire chain — from discovering user needs and UI/UX design to development, App Store launch, and marketing.
+    list:
+      BeanLedger App:
+        link: https://apps.apple.com/app/beanledger/id6739036460
+        content: An iOS app that brings Beancount's double-entry bookkeeping philosophy to mobile — the core goal is to make double-entry bookkeeping truly accessible to everyday users. Built on top of that are investor-friendly analytics such as asset Sankey diagrams, net-worth return curves, and investment return rates. Independently completed end-to-end, from concept design through App Store launch to ongoing iteration and promotion. No self-hosted backend by design — all data stays on the user's device for privacy and cost reasons. Currently leveraging AI to actively develop the all-new v3.0.
+      Gap Year:
+        content: Rest, reflection, learning, travel, and a wedding.
+  - company_name: Microsoft China
+    job_position: Software Development Engineer - SDE2
     from: 2020.6
     to: 2023.7
-    content: The main responsibilities include DevOps work for SharePoint Online products, specifically upgrading the .NET version of the project, defining CI pipeline specifications, and optimizing the project engineering experience for product development engineers, including development, code submission, testing, and CI integration.
+    content: Built engineering infrastructure for SharePoint Online — essentially improving the entire team's development velocity through tooling and standards, covering .NET version upgrades, CI pipeline standardization, and dev/test workflow optimization.
     list:
-      Upgrade .NET version:
+      .NET Version Upgrade:
         link: https://www.microsoft.com/en/microsoft-365/sharepoint/collaboration
-        content: Upgrade the .NET version of your SharePoint Online project from .NET 4 to .NET 5.
+        content: Upgraded the SharePoint Online monorepo from .NET 4 to .NET 5, leveraging internal tooling for automated large-scale code migration and incremental validation.
+      CI Pipeline Infrastructure & Standards:
+        content: Defined CI pipeline standards on Azure DevOps, designing global templates with a "meta-programming" mindset — baking compliance and security checks into every pipeline as reusable building blocks.
+      Build Workflow & Speed Optimization:
+        content: Designed a PR-level incremental build verification mechanism, dramatically reducing CI turnaround time and directly boosting the team's iteration velocity.
   - company_name: Seniverse
     job_position: Head of Back-End R&D
     from: 2017.6
     to: 2020.6
-    content: As the backend leader, I work with the CTO to design and implement a complete architecture for the entire backend weather data processing pipeline - from data collection to data distribution. The data processing part mainly involves the management of data processing task flow and the storage scheme for different data types, so it's about how to process and store data quickly and efficiently, mainly via the Python technology stack; the data distribution part is to build a stable API system that can carry high concurrent requests, including the design optimization of full request links from SLB to microservices, as well as an official website providing self-service single provisioning system, mainly via the Node.js and Elixir technology stack.
+    content: Co-led with the CTO the end-to-end architecture design and implementation of the backend weather data pipeline — from data collection to data distribution. The <b>data processing</b> layer tackled how to efficiently manage task workflows and design tailored storage strategies for different types of meteorological data; the <b>data distribution</b> layer focused on building a high-concurrency, stable API system covering full-link optimization from SLB to microservices, plus a self-service ordering and provisioning portal on the official website.
     list:
       API v4 - Hogwarts:
         link: https://api.seniverse.com/v4
-        content: It's a completely new API architecture designed and implemented relative to the older v3 systems, primarily to address the user experience and concurrency performance issues of the v3 API. The underlying services are mostly completely redesigned and implemented with Elixir (previously Node.js), stripping away the gateway logic and stateless data services. In <em>user usage</em>, Google+'s Partial Response protocol has been implemented so that the interface supports user-defined combinations of arbitrary fields to be returned; In terms of <em>interface performance</em>, internal services use Erlang's native RPC protocol for I/O communication, while redesigning the data storage method to rely on OSS for underlying storage, normalizing meteorological data through a standard binary matrix arrangement, and using multi-level caching to improve access performance; In <em>service stability</em>, completely designed and developed with the concept of Cloud Native, the whole system is deployed on the Kubernetes cluster of Aliyun, and achieved automatic scaling; In terms of <em>development efficiency</em>, we think about the flow of data throughout the system from a higher level of "meta-programming" and "metaflow" as much as possible, and design unified specifications and standards as the underlying support for the upper-level data flow needs, so that developers are usually developing platforms and rules, while specific single data development and iteration needs can be quickly validated and put it online through simple configuration. I was primarily responsible for the design of the majority of the system architecture, standards and specifications, working with members of my group to complete the development job.
+        content: A ground-up redesign of the API architecture, with underlying services rewritten in Elixir, fundamentally targeting the UX and concurrency bottlenecks of v3. <b>User experience</b>&#58; implemented a custom Partial Response protocol enabling clients to freely compose return fields; <b>Performance</b>&#58; inter-service communication via Erlang's native RPC, with OSS-backed storage using binary matrix normalization for meteorological data and multi-level caching for fast access; <b>Reliability</b>&#58; designed with Cloud Native principles, deployed on Alibaba Cloud Kubernetes with auto-scaling; <b>Dev efficiency</b>&#58; unified standards designed from a "meta-programming" and "meta-flow" perspective — reducing new data type onboarding to simple configuration for rapid go-live. Led the majority of architecture design and standard-setting, and shipped alongside the team with continuous iteration.
       Official Website v3 - Hansel:
         link: https://seniverse.com/
-        content: Primarily based on the NestJS framework, I uses TypeScript to design and implement the backend services of the official website that support both the front and backend. Modules can be divided into Organization, User, Order, Transaction, Product Definition, Product Instance, etc. Starting with the pre-technical selection, I was personally responsible for the service building, code organization, most of the module implementations, and the final formal go-online of the service.
+        content: Backend service for the official website built with NestJS + TypeScript, powering both the public-facing site and the admin backend. The core feature is an end-to-end self-service flow — from order placement and payment to API service activation — spanning modules like Organization, User, Order, Transaction, and Product Definition. Personally led the effort from tech stack selection and service architecture through implementation and launch of most modules.
       Data Acquisition System - Scorpio:
         link: https://www.processon.com/view/link/599cf06be4b0abd6112d9f68
-        content: For weather site data, I use the Celery/RabbitMQ task queue in Python3 to implement distributed crawling, pre-screening, data fusion between different data sources, post-processing standardization, and storage into the library. In between, Statsd/Graphite is used to monitor task processing status and system key metrics. Finally, the program is packaged for deployment using Twitter's PEX tool. I was responsible for the full design and implementation of the system. For professional grid data, Airflow was used to manage the ETL task flow, and I was responsible for the implementation and maintenance of most of the data flow.
+        content: End-to-end processing pipeline for weather station data — distributed crawling, multi-source data fusion, standardization, and database ingestion built on Python3 + Celery/RabbitMQ, with Statsd/Graphite for key metric monitoring and PEX for packaging and deployment. Designed and implemented the entire system independently. For professional gridded data, managed ETL workflows with Airflow, responsible for most of the pipeline implementation and maintenance.
       Kong Gateway-based Microservice Architecture - Halo:
-        content: Based on the open source gateway system Kong, the gateway service was secondary-customized developed with Lua to fit its own business, with the aim of splitting user logic and stateless data interface logic, making the system easier to maintain and scale. Its main functions include the verification of request parameters, user authentication, logging of user-related requests, access statistics and deductions, access rate limits, etc. It includes an implementation of a simple time series database for graphical presentation of different time latitudes of the access volume. The final service is deployed in the Kubernetes cluster. I was responsible for majority development, maintenance and iteration of Plugins.
+        content: API gateway service built on Kong/OpenResty with custom Lua plugins, with the core goal of decoupling user-facing logic from stateless data endpoints — making the system easier to maintain and scale. Features include request validation, authentication, log collection, traffic metering, and rate limiting, plus a lightweight time-series database for multi-dimensional traffic visualization. Deployed on Kubernetes. Responsible for developing and iterating most of the plugins through to production.
   - company_name: Duoyi Network
-    job_position: Back-End Web Developer
+    job_position: Web Application Developer
     from: 2016.3/4/7
     to: 2017.5
-    content: I was mainly responsible for web backend development using Node.js technology stack, involving Express/Koa framework, MySQL, MongoDB, Redis, etc.
+    content: Web backend development with the Node.js stack (Express/Koa + MySQL/MongoDB/Redis).
     list:
-      Game BBS:
+      Game Forum:
         link: https://bbs.duoyi.com/
-        content: In the early stage, I was responsible for writing the Activity module and Tag module, and in the later stage, I took over the entire project independently, including the implementation of new needs, daily maintenance, server deployment, new releases, performance optimization, and other complete processes from writing code to going online. The project is mainly based on the Express + MySQL + Redis architecture and consists of two parts. The front-end service is mainly responsible for simple page logic and page rendering, and the back-end service provides RESTful interface returning JSON data, so it also provides data to the mobile app. This project has given me a deeper understanding of best practices for building document systems, automating testing, logging systems, unified data return, MVC hierarchical architecture, rational use of caches, and other issues in Node.js industrial practice.
+        content: Initially built the Activity and Tag modules, then independently took over the entire project — handling feature development, day-to-day maintenance, server deployment, release management, and performance optimization end-to-end. The project ran on an Express + MySQL + Redis stack, with a front-end service for page rendering and a backend service providing RESTful JSON APIs that also served the mobile app. Through this project, developed a systematic understanding of documentation, automated testing, logging, MVC architecture, and caching strategies in production Node.js environments.
 
 # `link` in each key is optional
 personal_work:
   BeanLedger:
     link: https://apps.apple.com/app/beanledger/id6739036460
-    content: An independently developed iOS App - Minimalist double-entry bookkeeping, one-stop asset manager and investment assistant.
+    content: An independently developed iOS app — bringing professional double-entry bookkeeping into a minimalist mobile experience. Your one-stop asset manager and investment assistant.
   barn:
     link: https://github.com/Maples7/barn
-    content: A CLI tool which generates and deploy resumes on Github Pages automatically. Exactly like resume-version Hexo. Needless to say, this resume is generated by this tool.
+    content: A CLI tool that generates and deploys online resumes to GitHub Pages — think of it as Hexo for resumes. This very resume is built with it.
 
 skill:
-  Node.js / Elixir / Git: 90%
-  Python / TypeScript / C: 70%
-  Erlang / Docker / Shell: 50%
-  Kubernetes / DevOps: 30%
+  JavaScript / Swift / SwiftUI: 90%
+  Python / TypeScript / Vibe Coding: 70%
+  Elixir / Docker / Shell: 50%
+  Erlang / Kubernetes / DevOps: 30%

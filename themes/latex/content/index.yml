@@ -9,11 +9,11 @@ name: Harry Li (黎琦)
 title: 后端开发 + DevOps + iOS 开发
 
 profile:
-  - 从高一开始学习写代码参加信息学竞赛，有十多年的编程经验。
-  - 大学毕业后先后在中型公司和创业公司主要做 Web 后端开发，后在微软主要做项目工程化的工作，目前主要在独立开发 iOS App。
-  - 热爱用代码创造面向终端用户的产品，享受创造的纯粹乐趣，更偏爱创业公司的氛围和感觉。
-  - 在 AI 的编程能力超越大部分人类程序员的今天，希望借助 AI 的能力创造出优秀、有价值的产品。
-  - 投资爱好者，希望用正确的投资方式实现时间自由。
+  - 高一起写代码参加信息学竞赛，至今十余年——代码是我最擅长也最热爱的「介质」。
+  - 毕业后辗转中型公司与创业公司做 Web 后端，后在微软专注项目工程化，现全职独立开发 iOS App。
+  - 热爱用代码创造直接面向终端用户的产品——享受从无到有的纯粹乐趣，偏爱创业的节奏与氛围。
+  - AI 时代，编程的本质从「写代码」转向「做产品」——希望借助 AI 的能力创造真正优秀、有价值的产品。
+  - 投资爱好者，信奉长期主义，用正确的方式实现时间自由。
 
 education:
   2012.9 - 2016.6: 山东大学 - 电气工程与自动化(卓越) - 学士
@@ -39,64 +39,64 @@ work_experience:
     job_position: iOS 独立开发
     from: 2023.7
     to: 至今
-    content: 独立完成从发掘用户需求、UI/UX 设计、App 功能实现到上线 App Store、宣传营销的完整流程。
+    content: 一个人走完从需求发掘、UI/UX 设计、功能开发到上线 App Store、运营推广的全链路。
     list:
       BeanLedger App:
         link: https://apps.apple.com/app/beanledger/id6739036460
-        content: 一款移动端复式记账 iOS App，用移动端的交互体验实现 Beancount 的复式记账理念，同时引入更多对投资者友好的统计功能，包括资产桑基图、个人净资产收益变化曲线、投资收益曲线和收益率等。从概念和功能设计，到最终上线 App Store，以及后续的功能迭代、宣传，完全由个人独立完成。基于数据隐私和成本考量，无自建后端。目前在 AI 的帮助下，正在紧密开发 v3.0 的全新版本。
+        content: 一款将 Beancount 复式记账理念带入移动端的 iOS App——核心目标是让复式记账对普通人真正可用。在此基础上引入对投资者友好的统计功能：资产桑基图、净资产收益曲线、投资收益率等。从概念设计到上线 App Store 再到后续迭代推广，完全独立完成。基于数据隐私和成本考量，无自建后端，数据完全留在用户本地。目前借助 AI 紧密开发 v3.0 全新版本。
       Gap Year:
         content: 休息、思考、学习、旅行、婚礼。
   - company_name: 微软中国
     job_position: 软件研发工程师 - SDE2
     from: 2020.6
     to: 2023.7
-    content: 主要为 SharePoint Online 做软件工程和基础设施建设工作，具体包括升级项目 .NET 版本，制定 CI pipelines 规范，优化产品研发工程师开发、提交代码、测试、CI 集成等项目工程化的体验。
+    content: 为 SharePoint Online 做软件工程基础设施建设——本质上是通过工具和规范提升整个团队的研发效率，涵盖 .NET 版本升级、CI pipeline 标准化、开发与测试流程优化等。
     list:
       升级 .NET 版本:
         link: https://www.microsoft.com/en/microsoft-365/sharepoint/collaboration
-        content: 借助内部研发工具，将 SharePoint Online 巨型代码库的 .NET 版本从 .NET Core 4 升级到 .NET 5。
+        content: 将 SharePoint Online 巨型代码库的 .NET 版本从 .NET 4 升级到 .NET 5，借助内部工具实现大规模代码的自动化迁移与渐进式验证。
       构建 CI pipeline 基础设施和规范:
-        content: 基于 Azure DevOps，制定项目 CI pipeline 的规范，用元编程的范式提供全局引用的模版引入规范和安全检查。
+        content: 基于 Azure DevOps 制定 CI pipeline 规范，以「元编程」的思路设计全局模版——让规范和安全检查以可复用的方式自动融入每一条 pipeline。
       优化 Build 流程和速度:
-        content: 通过 Azure DevOps 的 PR pipeline，提供对项目 PR 的快速 Build（增量 Build）验证，加快产品 feature 的开发效率，极大缩短 PR 的平均 CI 验证时间。
+        content: 设计 PR 级别的增量 Build 验证机制，极大缩短 CI 验证耗时，直接提升了产品研发的迭代效率。
   - company_name: 心知天气
     job_position: 后端研发负责人
     from: 2017.6
     to: 2020.6
-    content: 与 CTO 一起对整个后端天气数据处理流程——从数据采集到数据分发——进行完整的架构设计和实现：<b>数据处理</b>部分主要涉及对数据处理任务流的管理以及不同数据类型的存储方案，是关于如何快速高效地处理和存储数据的问题；<b>数据分发</b>部分主要是构建能承载高并发请求的稳定的 API 系统，包括从 SLB 到微服务的全请求链路的设计优化，同时还有一套官网自助下单开通服务的系统。
+    content: 与 CTO 一起主导整个后端天气数据处理流程——从数据采集到数据分发——的完整架构设计与实现。<b>数据处理</b>层面解决的核心问题是如何高效管理任务流，并为不同类型的气象数据设计适配的存储方案；<b>数据分发</b>层面则是构建能承载高并发的稳定 API 系统，涵盖从 SLB 到微服务的全链路优化，同时搭建了官网自助下单、开通服务的完整体系。
     list:
       API v4 - Hogwarts:
         link: https://api.seniverse.com/v4
-        content: 全新的 API 架构体系，主要为了解决 v3 API 在用户体验和并发性能上的问题。底层服务用 Elixir 进行完全的重新设计与实现，将网关逻辑和无状态的数据服务剥离开来。在<b>用户使用方式上</b>，自主实现了 Google+ 的 Partial Response 协议使得 API 支持用户自定义任意字段的组合拼装返回；在<b>接口性能上</b>，内部服务之间完全使用 Erlang 原生的 RPC 协议进行 I/O 通信；同时重新设计了<b>数据存储方式</b>，底层存储依赖 OSS，把气象数据通过标准的二进制矩阵排列归一化处理，再使用多级缓存提升访问性能；在<b>服务稳定性上</b>，完全用 Cloud Native 的理念设计开发，整个系统部署在阿里云的 Kubernetes 集群上，并实现了自动伸缩；在<b>开发效率上</b>，尽可能从「元编程」和「元流程」的更高层角度思考数据在整个系统中的流动过程，尽可能的设计统一的规范和标准作为底层支持来满足上层的数据流转需求，让研发人员通常是在研发平台和规则，而具体的单一数据开发和迭代的需求则可以通过简单的配置来快速验证上线。个人主要负责大部分系统架构的设计、标准和规范的制定，和组内成员一起完成了开发上线工作，并持续迭代维护。
+        content: 从零重新设计的 API 架构，用 Elixir 重写底层服务，根本目标是解决 v3 在用户体验和并发性能上的瓶颈。<b>用户体验上</b>，自主实现 Partial Response 协议，支持用户自由组合返回字段；<b>性能上</b>，内部服务间采用 Erlang 原生 RPC 通信，底层存储基于 OSS 并将气象数据做二进制矩阵归一化处理，再以多级缓存加速访问；<b>稳定性上</b>，以 Cloud Native 理念设计，部署于阿里云 Kubernetes 集群并实现自动伸缩；<b>开发效率上</b>，从「元编程」和「元流程」的更高层角度设计统一规范——让新增数据类型的开发退化为简单配置即可快速上线。主导了大部分架构设计与规范制定，与团队一起完成开发上线并持续迭代。
       官网 v3 - Hansel:
         link: https://seniverse.com/
-        content: 主要是基于 NestJS 框架，使用 TypeScript 设计和实现了同时支持前台和后台的官网后端服务。功能上支持用户在官网自主下单、支付、开通 API 服务的全流程，模块主要可以划分为组织、用户、订单、交易、产品定义、产品实例等。个人负责了从前期技术选型开始的服务构建和代码组织、大部分模块的实现以及最后的服务正式上线工作。
+        content: 基于 NestJS + TypeScript 设计实现的官网后端服务，同时支撑前台与后台业务。核心功能是打通用户从下单、支付到开通 API 服务的完整自助流程，涉及组织、用户、订单、交易、产品定义等多个模块。从技术选型、服务架构到大部分模块的实现与上线，由个人主导完成。
       数据采集系统 - Scorpio:
         link: https://www.processon.com/view/link/599cf06be4b0abd6112d9f68
-        content: 对于天气站点数据，在 Python3 体系下用 Celery/RabbitMQ 任务队列实现了分布式抓取、前期筛选处理、不同数据源的数据融合、后期处理标准化、存储入库的过程。其间使用 Statsd/Graphite 来监控任务处理状态和系统关键指标。最后用 Twitter 的 PEX 工具对程序进行打包部署。个人负责了该系统全部的设计和实现。对于专业格点数据，使用 Airflow 来管理 ETL 任务流，个人负责了大部分数据流程的实现和维护。
+        content: 天气站点数据的完整处理链路——基于 Python3 + Celery/RabbitMQ 实现分布式抓取、多源数据融合、标准化处理与入库，用 Statsd/Graphite 监控关键指标，以 PEX 打包部署。该系统全部由个人独立设计实现。专业格点数据部分则使用 Airflow 管理 ETL 任务流，个人负责大部分数据处理流程的实现与维护。
       基于 Kong 网关的微服务架构设计与实现 - Halo:
-        content: 基于开源的网关系统 Kong/OpenResty，用 Lua 二次定制开发了与业务相契合的网关服务，目的是拆分用户逻辑和无状态的数据接口逻辑，使得系统更易维护且易于扩展。功能上主要包括对请求参数的校验、用户鉴权、与用户相关请求的日志采集、访问量统计与扣减、访问频率限制等。其中包括一个简单的时间序列数据库的实现用于访问量的不同时间纬度的图表展示。最终服务部署在 Kubernetes 集群。个人负责了大部分 Plugin 的开发维护和迭代部署上线的工作。
+        content: 基于 Kong/OpenResty 用 Lua 二次开发的网关服务，核心目标是将用户逻辑与无状态数据接口解耦——使系统更易维护也更易扩展。功能涵盖请求校验、用户鉴权、日志采集、访问量统计与频率限制等，其中还实现了一个轻量时序数据库用于访问量的多维度图表展示。部署于 Kubernetes 集群。个人负责大部分 Plugin 的开发与迭代上线。
   - company_name: 多益网络
     job_position: 互联网产品研发工程师
     from: 2016.3/4/7
     to: 2017.5
-    content: 主要负责使用 Node.js 技术栈进行 Web 后端开发，涉及 Express／Koa 框架、MySQL、MongoDB、Redis 等。
+    content: 使用 Node.js 技术栈（Express/Koa + MySQL/MongoDB/Redis）做 Web 后端开发。
     list:
       游戏论坛:
         link: https://bbs.duoyi.com/
-        content: 前期搭建过程中负责活动模块和标签模块的撰写，后期独立接手整个项目，负责新需求的实现、日常维护、服务器部署、版本发布、性能优化等从写代码到上线的完整流程。项目主要采用 Express + MySQL + Redis 的架构，由两部分组成：靠前端的服务主要负责简单的页面逻辑和页面渲染，后端的服务完全提供 RESTful 接口化的 JSON 数据返回，所以也同时给移动端 App 提供数据。本项目使我对 Node.js 工业实践中搭建文档系统、自动化测试、日志系统、统一数据返回、MVC 分层架构、合理使用缓存等问题的最佳实践有了更为深刻的理解。
+        content: 前期负责活动与标签模块，后期独立接手整个项目——从需求实现、日常维护到服务器部署、版本发布和性能优化，一个人走完全流程。采用 Express + MySQL + Redis 架构，前端服务负责页面渲染，后端服务提供 RESTful JSON 接口并同时为移动端 App 提供数据接口。通过这个项目，对 Node.js 工程实践中的文档体系、自动化测试、日志系统、MVC 分层和缓存策略等形成了系统性的理解。
 
 # `link` in each key is optional
 personal_work:
   BeanLedger:
     link: https://apps.apple.com/app/beanledger/id6739036460
-    content: 独立开发的 iOS App，极简复式记账，一站式资产管家和投资助手。
+    content: 独立开发的 iOS App——将复式记账的专业理念融入极简的移动交互，做你的一站式资产管家与投资助手。
   barn:
     link: https://github.com/Maples7/barn
-    content: 用于自动生成、部署在线简历到 GitHub Pages 等服务上的一套 CLI 工具，可以视为 Hexo 的简历版本。本简历即使用该工具生成。
+    content: 自动生成并部署在线简历到 GitHub Pages 的 CLI 工具，可以看作 Hexo 的简历版。本简历即由此工具生成。
 
 skill:
-  JavaScript / TypeScript / Swift: 90%
-  Python / C / Vibe Coding: 70%
+  JavaScript / Swift / SwiftUI: 90%
+  Python / TypeScript / Vibe Coding: 70%
   Elixir / Docker / Shell: 50%
-  Kubernetes / DevOps: 30%
+  Erlang / Kubernetes / DevOps: 30%
