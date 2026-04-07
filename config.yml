@@ -6,7 +6,7 @@
 ######################################
 
 ## name of theme
-theme: default
+theme: latex
 
 ## one of these values: pug
 ### ...post issues or RPs to add more support of engines

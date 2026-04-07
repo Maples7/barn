@@ -287,3 +287,31 @@ em {
   left: 0;
   height: 6px;
 }
+
+/* --- Print PDF button --- */
+.print-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  padding: 6px 16px;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.print-btn:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+@media print {
+  .print-btn {
+    display: none;
+  }
+}
