@@ -45,11 +45,12 @@ A resume/CV generator, parsing information from YAML file to generate a static w
 
 ### Themes
 
-- default: the default theme of barn
+- default: the default theme of barn, two-column layout with a gray sidebar
+- latex: a LaTeX-style academic resume theme, single-column layout with serif fonts, horizontal rules, and print-friendly design
 
 You can download any themes above and put them in folder `themes` and apply any one of them by changing the config inside `Theme` block in `config.yml`.
 
-(_Thers is only a theme called `default` in folder `themes` for now, you are welcomed to customize your own and make it open source. If you'd like to, catch the key points of instruction below._)
+(_You are welcomed to customize your own theme and make it open source. If you'd like to, catch the key points of instruction below._)
 
 #### How to make my own themes
 
