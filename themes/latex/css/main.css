@@ -1,0 +1,236 @@
+/* ==========================================================================
+   LaTeX-style Resume Theme — Chinese (main.css)
+   ========================================================================== */
+
+/* --- Reset --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Base typography --- */
+html {
+  font-size: 11pt;
+}
+
+body {
+  font-family: 'Libre Baskerville', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  color: #000;
+  line-height: 1.5;
+  background: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* --- Page container (simulates A4 paper) --- */
+.page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 50px 60px;
+  background: #fff;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 28pt;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.jobtitle {
+  font-size: 12pt;
+  font-weight: 400;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+/* --- Contact bar --- */
+.contact-bar {
+  text-align: center;
+  margin: 10px 0 6px;
+  font-size: 9pt;
+  line-height: 1.8;
+}
+
+.contact-item {
+  display: inline;
+  white-space: nowrap;
+}
+
+.contact-item + .contact-item::before {
+  content: ' \00b7 ';
+  margin: 0 6px;
+  color: #666;
+}
+
+.contact-label {
+  font-weight: 700;
+}
+
+.contact-sep {
+  color: #666;
+}
+
+/* --- Horizontal rules --- */
+.thick-rule {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 0 0 14px;
+}
+
+/* --- Sections --- */
+.section {
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 13pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+/* --- Entries (education, work) --- */
+.entry {
+  margin-bottom: 10px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.entry-company {
+  font-weight: 700;
+  font-size: 11pt;
+}
+
+.entry-date {
+  font-style: italic;
+  font-size: 10pt;
+  white-space: nowrap;
+}
+
+.entry-detail {
+  margin-left: 12px;
+}
+
+.entry-position {
+  font-style: italic;
+  font-size: 10pt;
+  margin-bottom: 3px;
+}
+
+.entry-content {
+  font-size: 10pt;
+  margin: 3px 0;
+  text-align: justify;
+}
+
+.entry-list {
+  margin: 4px 0 4px 20px;
+  font-size: 10pt;
+}
+
+.entry-list li {
+  margin-bottom: 3px;
+  text-align: justify;
+}
+
+.entry-link {
+  font-weight: 700;
+}
+
+/* --- Profile --- */
+.profile-text {
+  font-size: 10pt;
+  text-indent: 2em;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+/* --- Skills (plain text, no progress bars) --- */
+.skill-list {
+  font-size: 10pt;
+}
+
+.skill-item {
+  display: inline;
+}
+
+.skill-item + .skill-item::before {
+  content: ' \00b7 ';
+  margin: 0 4px;
+  color: #666;
+}
+
+/* --- Others --- */
+.others-list {
+  font-size: 10pt;
+}
+
+.others-item {
+  display: inline;
+}
+
+.others-item + .others-item::before {
+  content: ' \00b7 ';
+  margin: 0 6px;
+  color: #666;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm 15mm;
+  }
+
+  html {
+    font-size: 10pt;
+  }
+
+  body {
+    background: none;
+  }
+
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
