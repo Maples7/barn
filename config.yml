@@ -42,5 +42,5 @@ html_minifier:
 ## css compression
 css_minifier:
   enable: true
-  exclue:
+  exclude:
     - '*.min.css'

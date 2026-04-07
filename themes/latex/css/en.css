@@ -176,42 +176,72 @@ strong {
   text-align: justify;
 }
 
-/* --- Skills (plain text, no progress bars) --- */
+/* --- Skills (dot scale) --- */
 .skill-list {
   font-size: 10pt;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill-item {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 4px;
 }
 
-.skill-item + .skill-item::before {
-  content: ' \00b7 ';
-  margin: 0 4px;
-  color: #666;
+.skill-item:nth-child(even) {
+  margin-right: 0;
+}
+
+.skill-name {
+  flex: 1;
+}
+
+.skill-dots {
+  letter-spacing: 2px;
+  font-size: 9pt;
 }
 
 /* --- Others --- */
 .others-list {
   font-size: 10pt;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .others-item {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 4px;
 }
 
-.others-item + .others-item::before {
-  content: ' \00b7 ';
-  margin: 0 6px;
-  color: #666;
+.others-item:nth-child(even) {
+  margin-right: 0;
 }
 
-/* --- Print PDF button --- */
-.print-btn {
+.others-label {
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+/* --- Top buttons (PDF + alt version) --- */
+.top-btns {
   position: fixed;
   top: 16px;
   right: 16px;
   z-index: 9999;
+  display: flex;
+  gap: 8px;
+}
+
+.print-btn,
+.alt-btn {
   padding: 6px 16px;
   font-family: 'Libre Baskerville', serif;
   font-size: 11px;
@@ -221,10 +251,14 @@ strong {
   border: none;
   cursor: pointer;
   letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.print-btn:hover {
+.print-btn:hover,
+.alt-btn:hover {
   background-color: #333;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -251,7 +285,7 @@ strong {
     box-shadow: none;
   }
 
-  .print-btn {
+  .top-btns {
     display: none;
   }
 

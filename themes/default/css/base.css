@@ -1,0 +1,293 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  position: relative;
+  vertical-align: baseline;
+  line-height: inherit;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+  color: rgb(65, 64, 66);
+}
+
+em {
+  font-weight: 400;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 1096px;
+  padding: 0 12px;
+  border: 10px rgb(65, 64, 66) solid;
+  display: block;
+  overflow: hidden;
+}
+
+.left-section {
+  position: absolute;
+  float: left;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-left: -12px;
+  padding: 24px;
+  background-color: rgb(226, 227, 228);
+}
+
+.right-section {
+  position: relative;
+  float: right;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.head-pic {
+  text-align: center;
+}
+
+.head-pic > img {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  background-color: rgb(48, 48, 48);
+}
+
+.main-title {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main-title .title {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.main-title .subtitle {
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 8px;
+}
+
+.module {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.module .title {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.left-section .module {
+  text-align: center;
+}
+
+.left-section .module .title::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(48, 48, 48);
+}
+
+.left-section .module .subtitle {
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.left-section .module .content {
+  margin-bottom: 2px;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: left;
+}
+
+.right-section .module {
+  text-align: left;
+  margin-top: -25px;
+}
+
+.right-section .module .title::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: rgb(48, 48, 48);
+}
+
+.right-section .module .subtitle .company {
+  font-size: 18px;
+  font-weight: 900;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.right-section .module .subtitle .company .job-position {
+  font-size: 14px;
+  font-weight: 400;
+  float: left;
+}
+
+.right-section .module .subtitle .time {
+  font-size: 16px;
+  font-weight: 200;
+  float: right;
+  padding-top: 5px;
+}
+
+.right-section .module .content {
+  float: left;
+  font-size: 14px;
+  font-weight: 320;
+}
+
+.list {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.skill-list {
+  position: relative;
+  margin: -45px 0 15px 0;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-bar {
+  position: relative;
+  width: 180px;
+  height: 6px;
+  background-color: rgb(226, 227, 228);
+}
+
+.skill-bar .value {
+  position: absolute;
+  z-index: 99;
+  background-color: rgb(48, 48, 48);
+  top: 0;
+  left: 0;
+  height: 6px;
+}
+
+/* --- Print PDF button --- */
+.print-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  padding: 6px 16px;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.print-btn:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+@media print {
+  .print-btn {
+    display: none;
+  }
+}
