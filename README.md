@@ -1,82 +1,108 @@
 # Barn
 
 [![NPM](https://nodei.co/npm/barn-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/barn-cli/)
-[![NPM](https://nodei.co/npm-dl/barn-cli.png?months=6&height=3)](https://nodei.co/npm/barn-cli/)  
-**[Online Demo](http://cv.maples7.com/)**  
-A resume/CV generator, parsing information from YAML file to generate a static website which you can deploy on the [Github Pages](https://pages.github.com/). Exactly like resume-version [Hexo](https://hexo.io/).
+[![NPM](https://nodei.co/npm-dl/barn-cli.png?months=6&height=3)](https://nodei.co/npm/barn-cli/)
 
-## Usage
+**[Online Demo](http://cv.maples7.com/)**
+
+A resume/CV static site generator — parse your information from YAML files plus Pug templates, and output a deployable static website. Think of it as a resume-focused [Hexo](https://hexo.io/). Deploy effortlessly to [GitHub Pages](https://pages.github.com/) or any static hosting service.
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download/) (with npm)
 
 ### Installation
 
-`[sudo] npm install -g barn-cli` or `[sudo] yarn global add barn-cli`  
-(_Of course, you should install [Node.js with npm](https://nodejs.org/en/download/) before that_)
+```bash
+npm install -g barn-cli
+# or
+yarn global add barn-cli
+```
 
 ### Workflow
 
-0. `barn -h`: check the manual
-1. `barn init`: init a barn folder using `git clone`, so make sure you are connecting to the `www`
-1. `cd barn-starter`
-1. fill `config.yml` with your own customized configs
-1. fill YAML files in folder `themes/${your theme}/content/` with your own information
-1. make use of `barn server` to debug your pages and repeat step 3-5 until it satisfies you
-1. `barn deploy`: deploy to your own github resume repository
-1. trun on Github Pages, see [https://pages.github.com/](https://pages.github.com/) for more instruction
+1. **Initialize a project**
+
+   ```bash
+   barn init
+   cd barn-starter
+   ```
+
+   This clones the [barn-starter](https://github.com/Maples7/barn-starter) template and removes the `.git` directory so you can start fresh.
+
+2. **Configure**
+
+   Edit `config.yml` to set your preferred theme, deploy repository, custom domain (CNAME), and other options.
+
+3. **Fill in your information**
+
+   Edit YAML files under `themes/<your-theme>/content/` with your personal details (profile, education, work experience, skills, etc.). Each YAML file corresponds to a page — for example, `index.yml` for the Chinese version and `en.yml` for the English version.
+
+4. **Preview locally**
+
+   ```bash
+   barn server
+   ```
+
+   This starts an HTTP dev server (default port **3579**) with **live reload**. Any file changes are detected automatically — the pages regenerate and refresh in your browser in real time. Repeat steps 2–3 until you are satisfied.
+
+5. **Deploy**
+
+   ```bash
+   barn deploy
+   ```
+
+   This generates the final static site into `dist/`, then pushes it to the remote repository configured in `config.yml`. Turn on GitHub Pages for your repo ([instructions](https://pages.github.com/)) and your resume will be live.
 
 ### Commands
 
-- barn -h  
-  Checking the manual of this tool is the very first thing you should do.
-
-- barn init / i  
-  Initiate a barn project using `git clone` with [Maples7/barn-starter](https://github.com/Maples7/barn-starter).
-
-- barn genrate / g  
-  Generate ultimate static website to folder `dist`.
-
-- barn server / s  
-  Watch any changes of any files and apply them to folder `dist` immediately, so you can open `*.html` in folder `dist` with your browser to debug your pages locally.
-
-- barn deploy / d  
-  Deploy to a git-based server such as [Github Pages](https://pages.github.com/) and [Coding Pages](https://coding.net/help/doc/pages/).
-
-- barn -v  
-  Check the version.
+| Command | Alias | Description |
+|---|---|---|
+| `barn init` | `barn i` | Clone the [barn-starter](https://github.com/Maples7/barn-starter) template to bootstrap a new project. |
+| `barn generate` | `barn g` | Render Pug templates with YAML data, minify HTML/CSS, and output the static site to `dist/`. |
+| `barn server` | `barn s` | Generate the site, start a dev server with live reload, and open it in the browser. Use `-p <port>` to specify a custom port. |
+| `barn deploy` | `barn d` | Generate the site and deploy to a git-based hosting service (e.g., [GitHub Pages](https://pages.github.com/)). |
+| `barn -v` | | Show the version. |
+| `barn -h` | | Show the help manual. |
 
 ### Themes
 
-- default: the default theme of barn, two-column layout with a gray sidebar
-- latex: a LaTeX-style academic resume theme, single-column layout with serif fonts, horizontal rules, and print-friendly design
+| Theme | Description |
+|---|---|
+| `default` | Two-column layout with a gray sidebar. |
+| `latex` | LaTeX-style academic resume — single-column, serif fonts, horizontal rules, print-friendly. |
 
-You can download any themes above and put them in folder `themes` and apply any one of them by changing the config inside `Theme` block in `config.yml`.
+To switch themes, change the `theme` field in `config.yml`. You can also place additional themes in the `themes/` directory.
 
-(_You are welcomed to customize your own theme and make it open source. If you'd like to, catch the key points of instruction below._)
+Contributions of new themes are welcome! See below for guidelines.
 
-#### How to make my own themes
+#### Creating a Custom Theme
 
-Steps:
-
-1. On Github, create a barn theme project whose name is supposed to follow pattern `barn-theme-XXXX`
-2. Put all html templates in the root directory `./`, all css files in `./css/` and all images in `./image/`
-3. Make starter YAML files for information needed to render pages in `./content/` to tell users what they should provide
-4. Full tests and detail document are required in your own theme project
-5. Post a PR to this project to list your own theme inside `Themes` block above, please note whether any other template engines are needed besides `pug` and I'll give some support in my code
-
-You are welcomed to review this project for more information you need.
+1. Create a repository named following the pattern `barn-theme-XXXX`.
+2. Place Pug templates in the root directory (`./`), CSS files in `./css/`, and images in `./image/`.
+3. Provide starter YAML files in `./content/` so users know what data fields to fill in.
+4. Include a README with documentation and usage instructions.
+5. Submit a PR to this project to have your theme listed above. If your theme requires a template engine other than Pug, please note that in the PR.
 
 ## Debug
 
-`DEBUG=barn-cli barn [command]`: add `DEBUG=barn-cli` at the beginning of any command to get more information about the running status of program.
+Prefix any command with `DEBUG=barn-cli` to enable verbose logging:
 
-## Relatives
+```bash
+DEBUG=barn-cli barn server
+```
 
-- [barn-starter](https://github.com/Maples7/barn-starter)
-- [barn-cli](https://github.com/Maples7/barn-cli)
+## Related
+
+- [barn-cli](https://github.com/Maples7/barn-cli) — The CLI tool
+- [barn-starter](https://github.com/Maples7/barn-starter) — The starter template
 
 ## Contributors
 
-- [Maples7](http://maples7.com/): Creator and maintainner of this project
-- [ShadowWood](https://shadowwood.me/): Maker of the `default` theme
+- [Maples7](http://maples7.com/) — Creator and maintainer
+- [ShadowWood](https://shadowwood.me/) — Author of the `default` theme
 
 ## License
 
